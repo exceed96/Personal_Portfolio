@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "Apple-Thin";
+  src: url("../font/apple/AppleSDGothicNeoT.ttf");
+}
+
+@font-face {
+  font-family: "Apple-ExtraLight";
+  src: url("../font/apple/AppleSDGothicNeoUL.ttf");
+}
+
+@font-face {
+  font-family: "Apple-Light";
+  src: url("../font/apple/AppleSDGothicNeoSB.ttf");
+}
+
+@font-face {
+  font-family: "Apple-Regular";
+  src: url("../font/apple/AppleSDGothicNeoR.ttf");
+}
+
+@font-face {
+  font-family: "Apple-Medium";
+  src: url("../font/apple/AppleSDGothicNeoM.ttf");
+}
+
+@font-face {
+  font-family: "Apple-SemiBold";
+  src: url("../font/apple/AppleSDGothicNeoL.ttf");
+}
+
+@font-face {
+  font-family: "Apple-Bold";
+  src: url("../font/apple/AppleSDGothicNeoH.ttf");
+}
+
+@font-face {
+  font-family: "Apple-ExtraBold";
+  src: url("../font/apple/AppleSDGothicNeoEB.ttf");
+}
+
+@font-face {
+  font-family: "Apple-Black";
+  src: url("../font/apple/AppleSDGothicNeoB.ttf");
+}
+
+/* leferi */
+
+@font-face {
+  font-family: "Leferi-Bold";
+  src: url("../font/leferi/LeferiBaseBold.ttf");
+}
+
+@font-face {
+  font-family: "Leferi-Regular";
+  src: url("../font/leferi/LeferiBaseRegular.ttf");
+}
+
+@font-face {
+  font-family: "Leferi-Black";
+  src: url("../font/leferi/LeferiPointBlack.ttf");
+}
+
+@font-face {
+  font-family: "Leferi-BlackOblique";
+  src: url("../font/leferi/LeferiPointBlackOblique.ttf");
+}
+
+@font-face {
+  font-family: "Leferi-Special";
+  src: url("../font/leferi/LeferiPointSpecial.ttf");
+}
+
+@font-face {
+  font-family: "Leferi-SpecialItalic";
+  src: url("../font/leferi/LeferiPointSpecialItalic.ttf");
+}

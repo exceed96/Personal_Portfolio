@@ -1,0 +1,33 @@
+@import url("../src/font/font.css");
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 100%;
+  width: 100%;
+}
+
+.image-gallery-wrapper {
+  margin-top: 5rem;
+  max-width: 800px;
+  width: 100%;
+  height: 300px;
+  max-height: 533px;
+  margin: 0 auto;
+  border: 1px solid rgb(146, 129, 242);
+  box-shadow: #2b15453d 1px 10px 10px 5px;
+}
+
+.image-gallery-image {
+  height: 533px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
