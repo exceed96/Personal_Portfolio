@@ -1,6 +1,5 @@
 import { createPortal } from "react-dom";
 import { useModalState } from "store/Modal";
-import { useEffect } from "react";
 import ProjectModal from "components/Modal/ProjectModal";
 
 const ModalLayout = (): JSX.Element => {

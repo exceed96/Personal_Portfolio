@@ -1,14 +1,10 @@
 import { ProjectDataTypes } from "Types/ProjectType";
 import Detail from "img/Projects/Detail.svg";
-import tscen from "img/Projects/로그인 페이지.svg";
 import { useModalState } from "store/Modal";
+import testImage from "img/Projects/Tscenping/Tscen1.svg";
 
 const Project = (props: ProjectDataTypes): JSX.Element => {
   const { setModalName, setModalProps } = useModalState();
-
-  const listStyle =
-    "px-2 transition-transform duration-300 transform hover:scale-110 mb-2";
-  const imgStyle = "w-24 rounded-2xl object-cover";
 
   const modalOpenButtonStyle =
     "mt-8 text-[#eeffff] font-[Leferi-BlackOblique] xxs:text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl bg-[#262626] border-[1px] border-solid border-[#4c5050] rounded-2xl py-2 shadow-md hover:shadow-smallWhite hover:translate-y-[-5px] duration-300";
@@ -33,13 +29,18 @@ const Project = (props: ProjectDataTypes): JSX.Element => {
         </section>
         <section className="p-2 border-[1px] border-solid border-black rounded-3xl mt-4 bg-black">
           <img
-            src={tscen}
+            src={testImage}
             className="border-[1px] border-solid border-black rounded-2xl"
+            alt="project img"
           />
         </section>
         <section className="w-full mt-12 lg:mt-16 flex flex-col items-center">
           <section className="flex items-center mb-4 self-start">
-            <img src={Detail} className="w-5 sm:w-6 md:w-7 lg:w-8 mr-2" />
+            <img
+              src={Detail}
+              className="w-5 sm:w-6 md:w-7 lg:w-8 mr-2"
+              alt="project detail"
+            />
             <h3 className="font-[Leferi-BlackOblique] md:text-base lg:text-lg text-[#eeffff] break-all">
               Detail
             </h3>

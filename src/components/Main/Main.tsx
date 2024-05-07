@@ -33,6 +33,7 @@ const Main = (): JSX.Element => {
         <img
           src={profileImage}
           className="w-80 sm:w-70 md:w-60 rounded-[2rem]"
+          alt="profile img"
         />
         <ul className="flex flex-col self-start text-3xl h-full w-full sm:ml-12 font-[Leferi-BlackOblique]">
           <section className="w-full border-b-2 border-gray-400 pb-4 mt-4 md:mt-0">
@@ -41,27 +42,27 @@ const Main = (): JSX.Element => {
             </strong>
           </section>
           <li className={ListStyle}>
-            <img src={birth} className="mr-4 w-6" />
+            <img src={birth} className="mr-4 w-6" alt="birth" />
             <span className={infoStyle}>1996.04.24</span>
           </li>
           <li className={ListStyle}>
-            <img src={phone} className="mr-4 w-6" />{" "}
+            <img src={phone} className="mr-4 w-6" alt="phone number" />
             <span className={infoStyle}>010-5388-9359</span>
           </li>
           <li className={ListStyle}>
-            <img src={velog} className="mr-4 w-6" />
+            <img src={velog} className="mr-4 w-6" alt="blog" />
             <a href="https://velog.io/@exceed96" className={infoStyle}>
               https://velog.io/@exceed96
             </a>
           </li>
           <li className={ListStyle}>
-            <img src={github} className="mr-4 w-6" />
+            <img src={github} className="mr-4 w-6" alt="github" />
             <a href="https://github.com/exceed96" className={infoStyle}>
               https://github.com/exceed96
             </a>
           </li>
           <li className={ListStyle}>
-            <img src={email} className="mr-4 w-6" />{" "}
+            <img src={email} className="mr-4 w-6" alt="email" />
             <span className={infoStyle}>exceed_96@naver.com</span>
           </li>
         </ul>
@@ -71,7 +72,11 @@ const Main = (): JSX.Element => {
       <Skills />
       <section id="project" className="mt-20">
         <section className="text-4xl font-[Leferi-BlackOblique] border-b-2 border-[#b1b1b1] w-full pb-4 flex items-center">
-          <img src={project} className="w-8 sm:w-10 md:w-12 mr-4" />
+          <img
+            src={project}
+            className="w-8 sm:w-10 md:w-12 mr-4"
+            alt="my projects"
+          />
           <h2 className="text-[#eeffff] text-xl sm:text-4xl">Project</h2>
         </section>
         <ul className="mt-16">

@@ -156,7 +156,11 @@ const ProjectModal = (): JSX.Element => {
             <ul className="flex flex-wrap w-full md:w-3/4">
               {modalProps?.stack.map((stack) => (
                 <li className="px-4 pb-2">
-                  <img src={getImgSrc(stack)} className="w-14 rounded-2xl" />
+                  <img
+                    src={getImgSrc(stack)}
+                    className="w-14 rounded-2xl"
+                    alt="project imgs"
+                  />
                 </li>
               ))}
             </ul>
@@ -168,7 +172,11 @@ const ProjectModal = (): JSX.Element => {
             <ul className="flex flex-wrap w-full md:w-3/4">
               {modalProps?.tool.map((tool) => (
                 <li className="px-4 pb-2">
-                  <img src={getToolImgSrc(tool)} className="w-14 rounded-2xl" />
+                  <img
+                    src={getToolImgSrc(tool)}
+                    className="w-14 rounded-2xl"
+                    alt="project tool"
+                  />
                 </li>
               ))}
             </ul>
@@ -178,13 +186,17 @@ const ProjectModal = (): JSX.Element => {
       <section className="flex flex-col sm:flex-row w-full mt-8">
         <section className="w-full sm:w-1/2 flex flex-col items-start">
           <h3 className="self-start font-[Leferi-BlackOblique] flex ">
-            <img src={ProjectAll} className="mr-4" />
+            <img src={ProjectAll} className="mr-4" alt="project major work" />
             주요 기능
           </h3>
           <ul className="mt-2">
             {modalProps?.majorFunction.map((major) => (
               <li className="text-base text-[#eeffff] text-start flex mb-2">
-                <img src={ProjectCheck} className="mr-4" />
+                <img
+                  src={ProjectCheck}
+                  className="mr-4"
+                  alt="major work list icon"
+                />
                 {major}
               </li>
             ))}
@@ -192,13 +204,17 @@ const ProjectModal = (): JSX.Element => {
         </section>
         <section className="w-full sm:w-1/2 flex flex-col items-start mt-4 sm:mt-0">
           <h3 className="self-start font-[Leferi-BlackOblique] flex">
-            <img src={ProjectMe} className="mr-4" />
+            <img src={ProjectMe} className="mr-4" alt="project my work" />
             맡은 기능
           </h3>
           <ul className="mt-2">
             {modalProps?.myFunction.map((my) => (
               <li className="text-base text-[#eeffff] text-start flex mb-2 items-center">
-                <img src={ProjectChecked} className="mr-4" />
+                <img
+                  src={ProjectChecked}
+                  className="mr-4"
+                  alt="my work list icon"
+                />
                 {my}
               </li>
             ))}
@@ -207,10 +223,10 @@ const ProjectModal = (): JSX.Element => {
       </section>
       <section className="flex flex-col mt-8">
         <section className="flex items-center">
-          <img src={ProjectResult} className="mr-4" />
+          <img src={ProjectResult} className="mr-4" alt="project result" />
           <h3 className="font-[Leferi-BlackOblique]">Result</h3>
         </section>
-        <ul>
+        <ul className="list-disc">
           {modalProps?.result.map((result: string, index) => (
             <li
               key={index}

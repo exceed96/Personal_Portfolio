@@ -1,4 +1,3 @@
-import HTML from "img/Library/HTML.svg";
 import skills from "img/skill.webp";
 
 import SkillsData from "Data/SkillsData";
@@ -7,7 +6,11 @@ const Skills = (): JSX.Element => {
   return (
     <section id="skills" className="mt-20">
       <section className="text-4xl font-[Leferi-BlackOblique] border-b-2 border-[#b1b1b1] w-full pb-4 flex items-center">
-        <img src={skills} className="w-8 sm:w-10 md:w-12 mr-4" />
+        <img
+          src={skills}
+          className="w-8 sm:w-10 md:w-12 mr-4"
+          alt="project skill section"
+        />
         <h2 className="text-[#eeffff] text-xl sm:text-4xl">Skills</h2>
       </section>
       <ul className="mt-4 flex flex-col">
@@ -25,6 +28,7 @@ const Skills = (): JSX.Element => {
                   <img
                     src={stack.img}
                     className="w-12 sm:w-16 md:w-20 lg:w-24 rounded-xl duration-300"
+                    alt="project stack"
                   />
                   <span className="text-xs md:text-base font-[Leferi-BlackOblique]">
                     {stack.name}
@@ -58,6 +62,7 @@ const Skills = (): JSX.Element => {
                   <img
                     src={tool.img}
                     className="w-12 sm:w-16 md:w-20 lg:w-24 rounded-xl duration-300"
+                    alt="project tool"
                   />
                   <span className="text-xs md:text-base font-[Leferi-BlackOblique]">
                     {tool.name}

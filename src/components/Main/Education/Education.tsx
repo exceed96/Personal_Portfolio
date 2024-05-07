@@ -9,13 +9,21 @@ const Education = (): JSX.Element => {
   return (
     <section id="education" className="mt-20">
       <section className="text-4xl font-[Leferi-BlackOblique] border-b-2 border-[#b1b1b1] w-full pb-4 flex items-center">
-        <img src={education} className="w-8 sm:w-10 md:w-12 mr-4" />
+        <img
+          src={education}
+          className="w-8 sm:w-10 md:w-12 mr-4"
+          alt="my education"
+        />
         <h2 className="text-[#eeffff] text-xl sm:text-4xl">Education</h2>
       </section>
       <ul className="mt-4">
         <li className="flex flex-col">
           <section className="flex items-center">
-            <img src={school} className={educationTitleImgStyle} />
+            <img
+              src={school}
+              className={educationTitleImgStyle}
+              alt="my education"
+            />
             <h3 className={educatoinTitleStyle}>학력</h3>
           </section>
           <span className="text-xl font-[Leferi-Bold] mt-4 text-[#eeffff] flex flex-col lg:flex-row">
@@ -29,7 +37,11 @@ const Education = (): JSX.Element => {
         </li>
         <li className="flex flex-col mt-10">
           <section className="flex items-center">
-            <img src={etc} className={educationTitleImgStyle} />
+            <img
+              src={etc}
+              className={educationTitleImgStyle}
+              alt="my etc education"
+            />
             <h3 className={educatoinTitleStyle}>그 외 교육</h3>
           </section>
           <span className="text-xl font-[Leferi-Bold] mt-4 text-[#eeffff] flex flex-col lg:flex-row">
