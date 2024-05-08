@@ -1,7 +1,6 @@
 import { ProjectDataTypes } from "Types/ProjectType";
 import Detail from "img/Projects/Detail.svg";
 import { useModalState } from "store/Modal";
-import testImage from "img/Projects/Tscenping/Tscen1.svg";
 
 const Project = (props: ProjectDataTypes): JSX.Element => {
   const { setModalName, setModalProps } = useModalState();
