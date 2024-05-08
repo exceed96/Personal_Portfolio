@@ -1,6 +1,11 @@
+import WeakMain from "img/Projects/WeakApart/weak1.svg";
+import TscenMain from "img/Projects/Tscenping/Tscen1.svg";
+import InsteadMain from "img/Projects/Im/Image1.svg";
+
 const PROJECT_DATA = [
   {
     name: "InsteadMemo",
+    mainImage: InsteadMain,
     key: "insteadMemo",
     type: "팀 프로젝트",
     composition: "FrontEnd 1, BackEnd 2",
@@ -30,6 +35,7 @@ const PROJECT_DATA = [
   },
   {
     name: "Tscenping",
+    mainImage: TscenMain,
     key: "tscenping",
     type: "팀 프로젝트",
     composition: "FrontEnd 2, BackEnd 3",
@@ -78,6 +84,7 @@ const PROJECT_DATA = [
   },
   {
     name: "Tscenping-V2",
+    mainImage: WeakMain,
     key: "tscenpingv2",
     type: "팀 프로젝트",
     composition: "FrontEnd 2, BackEnd 3, Designer 1",
@@ -127,6 +134,7 @@ const PROJECT_DATA = [
   },
   {
     name: "전국 부실아파트 조회",
+    mainImage: WeakMain,
     key: "weakApart",
     type: "팀 프로젝트",
     composition: "FrontEnd 1, BackEnd 1, Designer 1",

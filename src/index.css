@@ -23,8 +23,11 @@ body {
   box-shadow: #2b15453d 1px 10px 10px 5px;
 }
 
+.image-gallery-slide {
+  max-height: 533px;
+}
 .image-gallery-image {
-  height: 533px;
+  /* height: 533px; */
 }
 
 code {

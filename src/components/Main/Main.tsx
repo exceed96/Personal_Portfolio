@@ -83,6 +83,7 @@ const Main = (): JSX.Element => {
           {PROJECT_DATA.map((projectData) => (
             <Project
               name={projectData.name}
+              mainImage={projectData.mainImage}
               composition={projectData.composition}
               part={projectData.part}
               key={projectData.key}

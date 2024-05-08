@@ -22,14 +22,14 @@ const Project = (props: ProjectDataTypes): JSX.Element => {
             </strong>
           </section>
           <section>
-            <strong className="font-[Leferi-BlackOblique] mt-2 lg:mt-0 ml-2 text-lg text-[#eeffff]">
+            <strong className="font-[Leferi-BlackOblique] mt-2 lg:mt-0 lg:ml-2 text-lg text-[#eeffff]">
               {props.type}
             </strong>
           </section>
         </section>
         <section className="p-2 border-[1px] border-solid border-black rounded-3xl mt-4 bg-black">
           <img
-            src={testImage}
+            src={props.mainImage}
             className="border-[1px] border-solid border-black rounded-2xl"
             alt="project img"
           />

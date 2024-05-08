@@ -7,6 +7,7 @@ export type ModalName =
 
 export interface ProjectDataTypes {
   name: string;
+  mainImage: string;
   key: string;
   composition: string;
   part: string;
