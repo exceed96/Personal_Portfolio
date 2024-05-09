@@ -22,23 +22,23 @@ const Skills = (): JSX.Element => {
             {SkillsData.stacks.map((stack, index) => (
               <li
                 key={index}
-                className="flex my-4 w-full md:w-1/2 hover:scale-110 py-3 px-8 md:px-4 hover:rounded-2xl hover:bg-[#1a1a1a] duration-300"
+                className="flex my-4 w-full md:w-1/2 hover:scale-110 duration-300 items-start"
               >
-                <section className="w-1/6 md:w-2/5 flex flex-col items-center">
+                <section className="w-1/6 md:w-1/5 flex flex-col items-center">
                   <img
                     src={stack.img}
                     className="w-12 sm:w-16 md:w-20 lg:w-24 rounded-xl duration-300"
                     alt="project stack"
                   />
-                  <span className="text-xs md:text-base font-[Leferi-BlackOblique]">
+                  <span className="xxs:text-[8px] sm:text-xs md:text-base font-[Leferi-BlackOblique]">
                     {stack.name}
                   </span>
                 </section>
-                <ul className="ml-8 w-5/6 md:w-3/5">
+                <ul className="ml-8 w-5/6 md:w-4/5">
                   {stack.detail.map((detail, index) => (
                     <li
                       key={index}
-                      className="text-base font-[Apple-Medium] list-disc text-start mt-1 break-all"
+                      className="text-base font-[Apple-Medium] list-disc text-start mt-1 lg:mr-10 break-all"
                     >
                       {detail}
                     </li>
@@ -56,23 +56,23 @@ const Skills = (): JSX.Element => {
             {SkillsData.tools.map((tool, index) => (
               <li
                 key={index}
-                className="flex my-4 md:w-1/2 hover:scale-110 py-3 px-8 md:px-4 hover:rounded-2xl hover:bg-[#1a1a1a] duration-300 items-center"
+                className="flex my-4 w-full md:w-1/2 hover:scale-110 duration-300 items-start"
               >
-                <section className="w-1/6 md:w-2/5 flex flex-col items-center">
+                <section className="w-1/6 md:w-1/5 flex flex-col items-center">
                   <img
                     src={tool.img}
                     className="w-12 sm:w-16 md:w-20 lg:w-24 rounded-xl duration-300"
                     alt="project tool"
                   />
-                  <span className="text-xs md:text-base font-[Leferi-BlackOblique]">
+                  <span className="xxs:text-[8px] sm:text-xs md:text-base font-[Leferi-BlackOblique]">
                     {tool.name}
                   </span>
                 </section>
-                <ul className="ml-8 w-5/6 md:w-3/5">
+                <ul className="ml-8 w-5/6 md:w-4/5">
                   {tool.detail.map((detail, index) => (
                     <li
                       key={index}
-                      className="text-base font-[Apple-Medium] list-disc text-start mt-1 break-all"
+                      className="text-base font-[Apple-Medium] list-disc text-start mt-1 lg:mr-10 break-all"
                     >
                       {detail}
                     </li>

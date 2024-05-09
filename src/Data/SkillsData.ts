@@ -35,7 +35,7 @@ const SkillsData = {
       ],
     },
     {
-      name: "JavaScript",
+      name: "Java Script",
       img: JavaScript,
       detail: [
         "ES6문법을 능숙하게 사용할 수 있습니다.",
@@ -43,7 +43,7 @@ const SkillsData = {
       ],
     },
     {
-      name: "TypeScript",
+      name: "Type Script",
       img: TypeScript,
       detail: [
         "interface, type 등 각종 타입 지정에 필요한 TypeScript의 타입 지정 기능들을 능숙하게 사용할 수 있습니다.",
@@ -78,7 +78,7 @@ const SkillsData = {
       ],
     },
     {
-      name: "ReactQuery",
+      name: "React Query",
       img: ReactQuery,
       detail: [
         "ReactQuery를 이용하여 정적 데이터들을 캐싱화하여 사용할 수 있습니다.",
