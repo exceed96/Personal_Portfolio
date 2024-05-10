@@ -1,65 +1,38 @@
-import { ProjectDataTypes } from "Types/ProjectType";
-import Detail from "img/Projects/Detail.svg";
-import { useModalState } from "store/Modal";
+import ProjectList from "./ProjectList";
+import project from "img/project.webp";
+import PROJECT_DATA from "Data/Project/ProjectData";
 
-const Project = (props: ProjectDataTypes): JSX.Element => {
-  const { setModalName, setModalProps } = useModalState();
-
-  const modalOpenButtonStyle =
-    "mt-8 text-[#eeffff] font-[Leferi-BlackOblique] xxs:text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl bg-[#262626] border-[1px] border-solid border-[#4c5050] rounded-2xl py-2 shadow-md hover:shadow-smallWhite hover:translate-y-[-5px] duration-300";
-
+const Project = (): JSX.Element => {
   return (
-    <li className="mb-8 py-2 px-4 sm:py-4 sm:px-6 md:py-6 md:px-8 lg:py-8 lg:px-10 rounded-2xl w-full bg-[#1a1a1a]">
-      <section className="flex flex-col w-full">
-        <section className="flex flex-col sm:flex-row items-center justify-between">
-          <section className="flex flex-col items-center sm:flex-row">
-            <strong className="font-[Leferi-BlackOblique] text-xl sm:text-2xl md:text-3xl lg:text-4xl text-[#eeffff]">
-              "{props.name}"
-            </strong>
-            <strong className="mt-2 lg:mt-0 lg:ml-4 font-[Leferi-BlackOblique] text-[#eeffff]">
-              {props.period}
-            </strong>
-          </section>
-          <section>
-            <strong className="font-[Leferi-BlackOblique] mt-2 lg:mt-0 lg:ml-2 text-lg text-[#eeffff]">
-              {props.type}
-            </strong>
-          </section>
-        </section>
-        <section className="p-2 border-[1px] border-solid border-black rounded-3xl mt-4 bg-black">
-          <img
-            src={props.mainImage}
-            className="border-[1px] border-solid border-black rounded-2xl"
-            alt="project img"
-          />
-        </section>
-        <section className="w-full mt-12 lg:mt-16 flex flex-col items-center">
-          <section className="flex items-center mb-4 self-start">
-            <img
-              src={Detail}
-              className="w-5 sm:w-6 md:w-7 lg:w-8 mr-2"
-              alt="project detail"
-            />
-            <h3 className="font-[Leferi-BlackOblique] md:text-base lg:text-lg text-[#eeffff] break-all">
-              Detail
-            </h3>
-          </section>
-          <section className="break-all p-3 font-[Apple-Medium] text-base sm:text-base md:text-lg lg:text-xl text-[#eeffff]">
-            {props.detail}
-          </section>
-        </section>
-        <button
-          className={modalOpenButtonStyle}
-          onClick={() => {
-            setModalProps(props);
-            setModalName(props.name);
-          }}
-        >
-          {props.name}
-          <span className="font-[Apple-Black]"> 프로젝트 더 알아보기</span>
-        </button>
+    <section id="project" className="mt-20">
+      <section className="text-4xl font-[Leferi-BlackOblique] border-b-2 border-[#b1b1b1] w-full pb-4 flex items-center">
+        <img
+          src={project}
+          className="w-8 sm:w-10 md:w-12 mr-4"
+          alt="my projects"
+        />
+        <h2 className="text-[#eeffff] text-xl sm:text-4xl">Project</h2>
       </section>
-    </li>
+      <ul className="mt-16">
+        {PROJECT_DATA.map((projectData) => (
+          <ProjectList
+            name={projectData.name}
+            mainImage={projectData.mainImage}
+            composition={projectData.composition}
+            part={projectData.part}
+            key={projectData.key}
+            type={projectData.type}
+            period={projectData.period}
+            detail={projectData.detail}
+            stack={projectData.stack}
+            tool={projectData.tool}
+            majorFunction={projectData.majorFunction}
+            myFunction={projectData.myFunction}
+            result={projectData.result}
+          />
+        ))}
+      </ul>
+    </section>
   );
 };
 

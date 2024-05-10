@@ -1,7 +1,6 @@
 import aboutMe from "img/aboutMe.webp";
 import AboutMeOne from "img/AboutMe/AboutMeOne.svg";
 import AboutMeTwo from "img/AboutMe/AboutMeTwo.svg";
-import AboutMeThree from "img/AboutMe/AboutMeThree.svg";
 
 const AboutMe = (): JSX.Element => {
   const aboutMeImgStyle = "mr-4 w-6 sm:w-6 md:w-7 lg:w-8";
@@ -27,14 +26,14 @@ const AboutMe = (): JSX.Element => {
               alt="aboutMe one"
             />
             <span className={aboutMeTitleStyle}>
-              동료와의 학습을 통해 배운것을 정리하고 서로간의 지식을 나누며 함께
-              능동적으로 성장해왔습니다.
+              동료와의 학습을 통해 배운 것을 정리하고 서로 간의 지식을 나누며
+              함께 능동적으로 성장해왔습니다.
             </span>
           </h3>
           <span className={aboutMeContentStyle}>
-            <strong className="underline">동료학습과 토론</strong>을 통해 함께
+            <strong className="underline">동료 학습과 토론</strong>을 통해 함께
             성장했습니다. 그 결과, 저는 프론트엔드 개발 분야의 폭넓은 경험과
-            이해를 쌓을 수 있었고, 이를
+            이해를 쌓을 수 있었고, 이를&nbsp;
             <strong className="underline">블로그</strong>를 통해 다른 이들과
             공유하였습니다. 이 과정에서 60개 이상의 포스팅을 작성하였습니다.
           </span>
@@ -58,17 +57,17 @@ const AboutMe = (): JSX.Element => {
             임합니다.
           </span>
         </li>
-        <li className="mt-8">
+        {/* <li className="mt-8">
           <h3 className="font-[Apple-Bold] text-[#73abfa] text-2xl flex items-start lg:items-center">
             <img
               src={AboutMeThree}
               className={aboutMeImgStyle}
               alt="aboutMe three"
             />
-            <span className={aboutMeTitleStyle}>뭐 쓰지</span>
+            <span className={aboutMeTitleStyle}></span>
           </h3>
           <span></span>
-        </li>
+        </li> */}
       </ul>
     </section>
   );

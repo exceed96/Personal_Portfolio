@@ -34,10 +34,14 @@ const ProjectModal = (): JSX.Element => {
 
   const listStyle = "flex items-start flex-col md:flex-row text-base mt-8";
   const listTitleStyle =
-    "font-[Leferi-BlackOblique] text-[#82AAFF] md:mr-4 text-xl";
+    "font-[Leferi-BlackOblique] text-[#82AAFF] md:mr-4 text-lg md:text-xl";
   const listSectionStyle = "md:w-1/4 flex items-center self-center";
   const listSpanStyle =
-    "text-start md:w-3/4 self-center font-[Apple-Black] text-xl md:ml-8";
+    "text-start md:w-3/4 self-center font-[Apple-Black] text-base sm:text-lg md:text-xl md:ml-8";
+
+  const functionTitleStyle =
+    "self-start text-base sm:text-lg md:text-xl font-[Leferi-BlackOblique] flex items-center mb-2";
+  const functionTitleImgStyle = "mr-4";
 
   const getToolImgSrc = (toolName: string): string => {
     switch (toolName) {
@@ -101,7 +105,7 @@ const ProjectModal = (): JSX.Element => {
   return (
     <section className="flex flex-col items-start h-[480px] sm:h-[1080px] overflow-y-auto scrollbar-hide">
       <section className="flex w-full flex-col md:flex-col lg:flex-col xl:flex-col">
-        <section className="w-full mr-10 p-1 sm:p-3 md:p-4 lg:p-5 bg-black rounded-3xl">
+        <section className="w-full mr-10 p-1 sm:p-2 bg-black rounded-3xl">
           <ImageGallery showPlayButton={false} items={projectImg} />
         </section>
         <ul className="mt-8">
@@ -183,15 +187,19 @@ const ProjectModal = (): JSX.Element => {
           </li>
         </ul>
       </section>
-      <section className="flex flex-col sm:flex-row w-full mt-8">
+      <section className="flex flex-col sm:flex-row w-full mt-12">
         <section className="w-full sm:w-1/2 flex flex-col items-start">
-          <h3 className="self-start font-[Leferi-BlackOblique] flex ">
-            <img src={ProjectAll} className="mr-4" alt="project major work" />
+          <h3 className={functionTitleStyle}>
+            <img
+              src={ProjectAll}
+              className={functionTitleImgStyle}
+              alt="project major work"
+            />
             주요 기능
           </h3>
           <ul className="mt-2">
             {modalProps?.majorFunction.map((major) => (
-              <li className="text-base text-[#eeffff] text-start flex mb-2">
+              <li className="text-sm md:text-base text-[#eeffff] text-start flex mb-2">
                 <img
                   src={ProjectCheck}
                   className="mr-4"
@@ -203,13 +211,17 @@ const ProjectModal = (): JSX.Element => {
           </ul>
         </section>
         <section className="w-full sm:w-1/2 flex flex-col items-start mt-4 sm:mt-0">
-          <h3 className="self-start font-[Leferi-BlackOblique] flex">
-            <img src={ProjectMe} className="mr-4" alt="project my work" />
+          <h3 className={functionTitleStyle}>
+            <img
+              src={ProjectMe}
+              className={functionTitleImgStyle}
+              alt="project my work"
+            />
             맡은 기능
           </h3>
           <ul className="mt-2">
             {modalProps?.myFunction.map((my) => (
-              <li className="text-base text-[#eeffff] text-start flex mb-2 items-center">
+              <li className="text-sm md:text-base text-[#eeffff] text-start flex mb-2">
                 <img
                   src={ProjectChecked}
                   className="mr-4"
@@ -224,13 +236,15 @@ const ProjectModal = (): JSX.Element => {
       <section className="flex flex-col mt-8">
         <section className="flex items-center">
           <img src={ProjectResult} className="mr-4" alt="project result" />
-          <h3 className="font-[Leferi-BlackOblique]">Result</h3>
+          <h3 className="font-[Leferi-BlackOblique]  text-base sm:text-lg md:text-xl">
+            Result
+          </h3>
         </section>
         <ul className="list-disc">
           {modalProps?.result.map((result: string, index) => (
             <li
               key={index}
-              className="text-base text-[Apple-Medium] text-start mt-5 list-disc"
+              className="text-sm md:text-base text-[Apple-Medium] text-start mt-5 list-disc"
             >
               {result}
             </li>

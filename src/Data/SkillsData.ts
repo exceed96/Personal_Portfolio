@@ -38,8 +38,8 @@ const SkillsData = {
       name: "Java Script",
       img: JavaScript,
       detail: [
-        "ES6문법을 능숙하게 사용할 수 있습니다.",
-        "JavaScript의 내부동작 방식을 이해하고 학습 하였습니다.",
+        "ES6 문법을 능숙하게 사용할 수 있습니다.",
+        "JavaScript의 내부 동작 방식을 이해하고 학습하였습니다.",
       ],
     },
     {
@@ -60,7 +60,7 @@ const SkillsData = {
       name: "Next",
       img: Next,
       detail: [
-        "Next의 Hybrid Rendering을 이용하여 CSR, SSR, SSG를 조합해 사용해본 경험이 있습니다.",
+        "Next의 Hybrid Rendering을 이용하여 CSR, SSR, SSG를 조합해 사용해 본 경험이 있습니다.",
       ],
     },
     {
@@ -81,7 +81,7 @@ const SkillsData = {
       name: "React Query",
       img: ReactQuery,
       detail: [
-        "ReactQuery를 이용하여 정적 데이터들을 캐싱화하여 사용할 수 있습니다.",
+        "ReactQuery를 이용하여 정적 데이터들을 캐싱 화하여 사용할 수 있습니다.",
       ],
     },
     {
@@ -102,7 +102,7 @@ const SkillsData = {
       name: "TailWind",
       img: TailWind,
       detail: [
-        "TailWind를 이용하여 반응형 및 CSS-IN-JS코드를 능숙하게 사용할 수 있습니다.",
+        "TailWind를 이용하여 반응형 및 Css-In-Js 코드를 능숙하게 사용할 수 있습니다.",
       ],
     },
     {
@@ -117,7 +117,7 @@ const SkillsData = {
     {
       name: "Github",
       img: Github,
-      detail: ["Git을 사용한 협업을 다수 경험하였습니다. "],
+      detail: ["Git을 사용한 협업을 다수 경험하였습니다."],
     },
     {
       name: "Figma",
