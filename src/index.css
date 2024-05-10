@@ -27,7 +27,7 @@ body {
   /* max-height: 533px; */
 }
 .image-gallery-image {
-  /* height: 533px; */
+  border-radius: 1rem;
 }
 
 code {
