@@ -1,6 +1,6 @@
 import WeakMain from "img/Projects/WeakApart/weak1.svg";
 import TscenMain from "img/Projects/Tscenping/Tscen1.svg";
-import InsteadMain from "img/Projects/Im/Image1.svg";
+import InsteadMain from "img/Projects/Im/Im1.svg";
 import TscenRMain from "img/Projects/Tscenping/TscenpingProfile.svg";
 
 const PROJECT_DATA = [

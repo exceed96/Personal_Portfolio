@@ -32,6 +32,14 @@ import Weak2 from "img/Projects/WeakApart/weak2.svg";
 import Weak3 from "img/Projects/WeakApart/weak3.svg";
 import Weak4 from "img/Projects/WeakApart/weak4.svg";
 
+import Im1 from "img/Projects/Im/Im1.svg";
+import Im2 from "img/Projects/Im/Im2.svg";
+import Im3 from "img/Projects/Im/Im3.svg";
+import Im4 from "img/Projects/Im/Im4.svg";
+import Im5 from "img/Projects/Im/Im5.svg";
+import Im6 from "img/Projects/Im/Im6.svg";
+import Im7 from "img/Projects/Im/Im7.svg";
+
 export const PROJECT_TSCENPING_DATA = [
   { original: Tscen1 },
   { original: Tscen2 },
@@ -72,4 +80,12 @@ export const PROJECT_WEAK_DATA = [
   { original: Weak4 },
 ];
 
-export const PROJECT_INSTEAD_DATA = [{ original: Weak1 }];
+export const PROJECT_INSTEAD_DATA = [
+  { original: Im1 },
+  { original: Im2 },
+  { original: Im3 },
+  { original: Im4 },
+  { original: Im5 },
+  { original: Im6 },
+  { original: Im7 },
+];
