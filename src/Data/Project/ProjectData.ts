@@ -1,6 +1,7 @@
 import WeakMain from "img/Projects/WeakApart/weak1.svg";
 import TscenMain from "img/Projects/Tscenping/Tscen1.svg";
 import InsteadMain from "img/Projects/Im/Image1.svg";
+import TscenRMain from "img/Projects/Tscenping/TscenpingProfile.svg";
 
 const PROJECT_DATA = [
   {
@@ -84,7 +85,7 @@ const PROJECT_DATA = [
   },
   {
     name: "Tscenping-V2",
-    mainImage: WeakMain,
+    mainImage: TscenRMain,
     key: "tscenpingv2",
     type: "팀 프로젝트",
     composition: "FrontEnd 2, BackEnd 3, Designer 1",

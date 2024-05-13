@@ -26,13 +26,19 @@ const ContactAndInfo = (): JSX.Element => {
       </li>
       <li className={ListStyle}>
         <img src={velog} className="mr-4 w-6" alt="blog" />
-        <a href="https://velog.io/@exceed96" className={infoStyle}>
+        <a
+          href="https://velog.io/@exceed96"
+          className={`${infoStyle} hover:scale-110 hover:text-[#eeffff] duration-300`}
+        >
           https://velog.io/@exceed96
         </a>
       </li>
       <li className={ListStyle}>
         <img src={github} className="mr-4 w-6" alt="github" />
-        <a href="https://github.com/exceed96" className={infoStyle}>
+        <a
+          href="https://github.com/exceed96"
+          className={`${infoStyle} hover:scale-110 hover:text-[#eeffff] duration-300`}
+        >
           https://github.com/exceed96
         </a>
       </li>

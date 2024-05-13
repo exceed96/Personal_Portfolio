@@ -87,6 +87,19 @@ const ProjectModal = (): JSX.Element => {
     }
   };
 
+  const getGithubUrl = (name: string) => {
+    switch (name) {
+      case "InsteadMemo":
+        return "https://github.com/Instead-Memory/Instead-Memory";
+      case "Tscenping":
+        return "https://github.com/tscenping";
+      case "Tscenping-V2":
+        return "https://github.com/tscenping/tscenping";
+      case "전국 부실아파트 조회":
+        return "https://github.com/poorapartment/FE";
+    }
+  };
+
   const getProjectImgSrc = (name: string) => {
     switch (name) {
       case "InsteadMemo":
@@ -157,7 +170,7 @@ const ProjectModal = (): JSX.Element => {
             <section className={listSectionStyle}>
               <span className={listTitleStyle}>Stack</span>
             </section>
-            <ul className="flex flex-wrap w-full md:w-3/4">
+            <ul className="flex flex-wrap w-full md:w-3/4 md:mt-2">
               {modalProps?.stack.map((stack) => (
                 <li className="px-4 pb-2">
                   <img
@@ -173,7 +186,7 @@ const ProjectModal = (): JSX.Element => {
             <section className={listSectionStyle}>
               <span className={listTitleStyle}>Tool</span>
             </section>
-            <ul className="flex flex-wrap w-full md:w-3/4">
+            <ul className="flex flex-wrap w-full md:w-3/4 md:mt-2">
               {modalProps?.tool.map((tool) => (
                 <li className="px-4 pb-2">
                   <img
@@ -181,6 +194,14 @@ const ProjectModal = (): JSX.Element => {
                     className="w-14 rounded-2xl"
                     alt="project tool"
                   />
+                  {tool === "Github" && (
+                    <a
+                      href={getGithubUrl(modalProps.name)}
+                      className="text-sm font-[Apple-Black]"
+                    >
+                      바로가기
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>

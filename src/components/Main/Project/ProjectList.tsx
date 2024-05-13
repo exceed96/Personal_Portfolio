@@ -9,7 +9,7 @@ const ProjectList = (props: ProjectDataTypes): JSX.Element => {
     "mt-4 sm:mt-6 md:mt-8 text-[#eeffff] font-[Leferi-BlackOblique] xxs:text-[11px] xs:text-base sm:text-lg md:text-xl lg:text-2xl bg-[#262626] border-[1px] border-solid border-[#4c5050] rounded-2xl py-2 shadow-md hover:shadow-smallWhite hover:translate-y-[-5px] duration-300";
 
   return (
-    <li className="mb-8 py-4 px-4 sm:py-4 sm:px-6 md:py-6 md:px-8 lg:py-8 lg:px-10 rounded-2xl w-full bg-[#1a1a1a]">
+    <li className="mb-12 py-4 px-4 sm:py-4 sm:px-6 md:py-6 md:px-8 lg:py-8 lg:px-10 rounded-2xl w-full bg-[#1a1a1a]">
       <section className="flex flex-col w-full">
         <section className="flex flex-col sm:flex-row items-center justify-between">
           <section className="flex flex-col items-center md:items-end sm:flex-row">
