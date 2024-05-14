@@ -26,6 +26,8 @@ import TscenR11 from "img/Projects/TscenpingV2/TscenR11.svg";
 import TscenR12 from "img/Projects/TscenpingV2/TscenR12.svg";
 import TscenR13 from "img/Projects/TscenpingV2/TscenR13.svg";
 import TscenR14 from "img/Projects/TscenpingV2/TscenR14.svg";
+import TscenGame from "img/Projects/TscenpingV2/Game.gif";
+import TscenChatting from "img/Projects/TscenpingV2/Chatting.gif";
 
 import Weak1 from "img/Projects/WeakApart/weak1.svg";
 import Weak2 from "img/Projects/WeakApart/weak2.svg";
@@ -57,6 +59,8 @@ export const PROJECT_TSCENPING_DATA = [
 ];
 
 export const PROJECT_TSCENPINGV2_DATA = [
+  { original: TscenGame },
+  { original: TscenChatting },
   { original: TscenR1 },
   { original: TscenR2 },
   { original: TscenR3 },

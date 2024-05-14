@@ -1,7 +1,7 @@
 import WeakMain from "img/Projects/WeakApart/weak1.svg";
 import TscenMain from "img/Projects/Tscenping/Tscen1.svg";
 import InsteadMain from "img/Projects/Im/Im1.svg";
-import TscenRMain from "img/Projects/Tscenping/TscenpingProfile.svg";
+import TscenRMain from "img/Projects/TscenpingV2/Game.gif";
 
 const PROJECT_DATA = [
   {
@@ -28,8 +28,8 @@ const PROJECT_DATA = [
       "REST API를 이용한 메모 저장/편집, 중요메모 지정, 폴더를 생성하여 메모 저장",
     ],
     result: [
-      "웹 개발을 처음 입문한 이후로 제대로 시작해 본 웹 개발 팀 프로젝트입니다. 처음으로 REST API를 이용하여 BackEnd와 데이터를 주고받고 데이터를 JavaScript의 메서드를 통하여 가공해서 사용하는 등 웹 개발에서 FrontEnd와 BackEnd가 어떤 방식으로 통신을 해야 하고 어떤 흐름을 구성해야 하는지 경험을 쌓을 수 있었습니다.",
-      "또한 이론적으로만 알고 있던 로그인 한 유저의 정보와 보안성을 관리하는 다양한 방법을 프로젝트에 적용함으로써 각각의 효율성을 알게 되었습니다. 여러 가지 방법 중 선택한 방법은 localStorage에 만료시간이 짧은 Access Token을 저장하고 Access Token의 재발급 용도로 사용할 Refresh Token은 HTTP Only 옵션과 sameSite 옵션을 정의한 Secure Cookie에 정의함으로써 토큰이 외부로 노출될 가능성을 줄였습니다.",
+      "처음으로 REST API를 이용하여 BackEnd와 데이터를 주고받고 데이터를 JavaScript의 메서드를 통하여 가공해서 사용하는 등 웹 개발에서 FrontEnd와 BackEnd가 어떤 방식으로 통신을 해야 하고 어떤 흐름을 구성해야 하는지 경험을 쌓을 수 있었습니다.",
+      "이론적으로만 알고 있던 로그인 한 유저의 정보와 보안성을 관리하는 다양한 방법을 프로젝트에 적용함으로써 각각의 효율성을 알게 되었습니다. 여러 가지 방법 중 선택한 방법은 localStorage에 만료시간이 짧은 Access Token을 저장하고 Access Token의 재발급 용도로 사용할 Refresh Token은 HTTP Only 옵션과 sameSite 옵션을 정의한 Secure Cookie에 정의함으로써 토큰이 외부로 노출될 가능성을 줄였습니다.",
       "서비스화를 하기 위한 배포 작업을 해봄으로써 어떤 사전 작업과 배포를 위해 필요한 게 무엇인지에 대해서 알게 되는 발판이 되었습니다. 서비스의 신뢰성을 높이기 위하여 HTTPS 프로토콜을 적용하고 이를 위한 SSL 인증서를 발급받아 Nginx에 정의하여 AWS의 EC2를 통하여 배포하였습니다.",
       "실제 불편함을 겪어 개발을 시작한 프로젝트이므로 사용자의 관점에서 프레임을 짜는 방식 혹은 어떤 기능을 만들어야 긍정적인 반응이 나올지 생각하게 된 프로젝트입니다. 해당 경험을 통하여 이후 프로젝트에서도 기능을 만들거나 프레임을 구성할 때 항상 사용자의 관점에서 먼저 바라보게 하는 계기가 되었습니다.",
     ],
