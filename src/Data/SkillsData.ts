@@ -16,6 +16,8 @@ import Figma from "img/Tools/Figma.svg";
 import Firebase from "img/Tools/Firebase.svg";
 import Notion from "img/Tools/Notion.svg";
 import AWS from "img/Tools/AWS.svg";
+import Docker from "img/Tools/Docker.svg";
+import Socket from "img/Library/Socket.svg";
 
 const SkillsData = {
   stacks: [
@@ -112,6 +114,13 @@ const SkillsData = {
         "Axios의 interceptors를 활용하여 중복된 호출 코드 로직을 간결하게 정리할 수 있습니다.",
       ],
     },
+    {
+      name: "Socket.io",
+      img: Socket,
+      detail: [
+        "Socket.io를 이용하여 실시간 데이터 통신이 필요한 기능을 구현할 수 있습니다.",
+      ],
+    },
   ],
   tools: [
     {
@@ -142,6 +151,13 @@ const SkillsData = {
       name: "AWS",
       img: AWS,
       detail: ["AWS의 EC2, Route53, S3을 이용한 배포 경험이 있습니다."],
+    },
+    {
+      name: "Docker",
+      img: Docker,
+      detail: [
+        "Docker를 이용하여 간단한 구조의 이미지 생성과 이를 위한 Docker-Compose파일을 구성할 수 있습니다.",
+      ],
     },
   ],
 };

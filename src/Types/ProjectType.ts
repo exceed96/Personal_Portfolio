@@ -5,6 +5,11 @@ export type ModalName =
   | "weakApart"
   | null;
 
+export interface resultTypes {
+  title: string;
+  content: string;
+}
+
 export interface ProjectDataTypes {
   name: string;
   mainImage: string;
@@ -18,5 +23,5 @@ export interface ProjectDataTypes {
   tool: string[];
   majorFunction: string[];
   myFunction: string[];
-  result: string[];
+  result: resultTypes[];
 }

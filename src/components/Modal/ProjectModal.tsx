@@ -14,6 +14,7 @@ import ReactQuery from "img/Library/ReactQuery.svg";
 import Firebase from "img/Tools/Firebase.svg";
 import Github from "img/Tools/Github.svg";
 import Figma from "img/Tools/Figma.svg";
+import Docker from "img/Tools/Docker.svg";
 
 import ProjectCheck from "img/ProjectModal/ProjectCheck.svg";
 import ProjectChecked from "img/ProjectModal/ProjectChecked.svg";
@@ -28,6 +29,8 @@ import {
   PROJECT_INSTEAD_DATA,
   PROJECT_WEAK_DATA,
 } from "Data/Project/ProjectImageData";
+
+import { resultTypes } from "Types/ProjectType";
 
 const ProjectModal = (): JSX.Element => {
   const { modalProps } = useModalState();
@@ -51,6 +54,8 @@ const ProjectModal = (): JSX.Element => {
         return Github;
       case "Firebase":
         return Firebase;
+      case "Docker":
+        return Docker;
       default:
         return "";
     }
@@ -255,19 +260,24 @@ const ProjectModal = (): JSX.Element => {
         </section>
       </section>
       <section className="flex flex-col mt-8">
-        <section className="flex items-center">
+        <section className="flex items-center mb-2">
           <img src={ProjectResult} className="mr-4" alt="project result" />
           <h3 className="font-[Leferi-BlackOblique]  text-base sm:text-lg md:text-xl">
             Result
           </h3>
         </section>
-        <ul className="list-disc">
-          {modalProps?.result.map((result: string, index) => (
+        <ul>
+          {modalProps?.result.map((result: resultTypes, index) => (
             <li
               key={index}
-              className="text-sm md:text-base text-[Apple-Medium] text-start mt-5 list-disc"
+              className="text-sm md:text-base font-[Apple-Medium] text-start mb-10 list-disc"
             >
-              {result}
+              <details className="text-white">
+                <summary className="font-[Apple-Black] sm:text-base md:text-lg text-[#eafefe]">
+                  {result.title}
+                </summary>
+                {result.content}
+              </details>
             </li>
           ))}
         </ul>

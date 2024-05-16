@@ -12,6 +12,17 @@ body {
   width: 100%;
 }
 
+details > summary {
+  list-style-type: "👉 ";
+  cursor: pointer;
+  transition: margin 0.3s ease;
+}
+
+details[open] > summary {
+  list-style-type: "👇 ";
+  margin-bottom: 20px;
+}
+
 .image-gallery-wrapper {
   margin-top: 5rem;
   max-width: 800px;
