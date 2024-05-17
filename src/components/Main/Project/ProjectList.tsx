@@ -26,7 +26,7 @@ const ProjectList = (props: ProjectDataTypes): JSX.Element => {
             </strong>
           </section>
         </section>
-        <section className="p-1 md:p-2 rounded-3xl mt-4 bg-[#7B7B7B]">
+        <section className="p-1 md:p-2 rounded-3xl mt-4 bg-black">
           <img
             src={props.mainImage}
             className="rounded-2xl"
