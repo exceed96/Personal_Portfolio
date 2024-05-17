@@ -4,6 +4,7 @@ import etc from "img/etc.svg";
 import { EDUCATION_PROJECT_DATA } from "Data/Education/EducationProjectData";
 import { EducationProjectDataType } from "Types/EducationType";
 import certification42 from "img/sangyeki.png";
+import Github from "img/Tools/Github.svg";
 
 const Education = (): JSX.Element => {
   const educatoinTitleStyle =
@@ -59,18 +60,24 @@ const Education = (): JSX.Element => {
                 {EDUCATION_PROJECT_DATA.map(
                   (project: EducationProjectDataType) => (
                     <li className="flex flex-col mb-5">
-                      <details className="text-sm md:text-base educationDetail">
-                        <summary className="educationDetail">
-                          <span className="mr-3 text-base md:text-lg text-[#dfffff] ">
+                      <details className="text-base md:text-lg educationDetail">
+                        <summary className="flex items-center">
+                          <span className="mr-3 text-lg md:text-xl text-[#dfffff] font-[Apple-Light]">
                             {project.title}
                           </span>
                           {project.github && (
-                            <a href={project.github} className="text-base">
-                              GitHub 바로가기
+                            <a href={project.github}>
+                              <img
+                                src={Github}
+                                alt="github"
+                                className="w-7 rounded-[4px]"
+                              />
                             </a>
                           )}
                         </summary>
-                        📜&nbsp;{project.summary}
+                        <section className="ml-5 break-words text-base md:text-lg font-[Apple-Medium]">
+                          📜&nbsp;{project.summary}
+                        </section>
                       </details>
                     </li>
                   )

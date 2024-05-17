@@ -24,14 +24,20 @@ details[open] > summary {
 }
 
 .educationDetail > summary {
-  list-style-type: "📘 ";
+  list-style-type: none;
   cursor: pointer;
   transition: margin 0.2s ease;
+  display: flex;
+  align-items: center;
 }
 
-.educationDetail[open] > summary {
-  list-style-type: "📖 ";
-  margin-bottom: 24px;
+.educationDetail > summary::before {
+  content: "📘";
+  margin-right: 8px;
+}
+
+.educationDetail[open] > summary::before {
+  content: "📖";
 }
 
 .image-gallery-wrapper {
