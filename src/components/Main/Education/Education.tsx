@@ -87,7 +87,7 @@ const Education = (): JSX.Element => {
                     <summary>수료증</summary>
                     <img
                       src={certification42}
-                      className="w-1/2 "
+                      className="w-full md:w-1/2 "
                       alt="42seoul certification"
                     />
                   </details>
