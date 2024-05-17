@@ -70,7 +70,7 @@ const Education = (): JSX.Element => {
                               <img
                                 src={Github}
                                 alt="github"
-                                className="w-7 rounded-[4px]"
+                                className="w-5 sm:w-6 md:w-7 rounded-[4px]"
                               />
                             </a>
                           )}
