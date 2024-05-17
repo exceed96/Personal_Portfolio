@@ -1,11 +1,15 @@
 import education from "img/education.webp";
 import school from "img/school.svg";
 import etc from "img/etc.svg";
+import { EDUCATION_PROJECT_DATA } from "Data/Education/EducationProjectData";
+import { EducationProjectDataType } from "Types/EducationType";
+import certification42 from "img/sangyeki.png";
 
 const Education = (): JSX.Element => {
   const educatoinTitleStyle =
     "text-lg md:text-xl lg:text-2xl font-[Apple-Black] text-[#eeffff]";
   const educationTitleImgStyle = "mr-4 w-6 md:w-7 lg:w-8";
+
   return (
     <section id="education" className="mt-20">
       <section className="text-4xl font-[Leferi-BlackOblique] border-b-2 border-[#b1b1b1] w-full pb-4 flex items-center">
@@ -45,12 +49,40 @@ const Education = (): JSX.Element => {
             <h3 className={educatoinTitleStyle}>그 외 교육</h3>
           </section>
           <span className="text-xl font-[Leferi-Bold] mt-4 text-[#eeffff] flex flex-col lg:flex-row">
-            <span className="text-base sm:text-lg md:text-xl lg:text-2xl">
-              42Seoul
-            </span>
-            <span className="text-base sm:text-lg md:text-xl lg:text-2xl">
-              (2022.03.07 ~ 2023.12.29)
-            </span>
+            <details>
+              <summary className="text-base sm:text-lg md:text-xl lg:text-2xl">
+                42Seoul (2022.03.07 ~ 2023.12.29)
+              </summary>
+              <ul>
+                {EDUCATION_PROJECT_DATA.map(
+                  (project: EducationProjectDataType) => (
+                    <li className="flex flex-col mb-4">
+                      <details className="text-base">
+                        <summary>
+                          <span className="mr-3">{project.title}</span>
+                          {project.github && (
+                            <a href={project.github} className="text-base">
+                              GitHub 바로가기
+                            </a>
+                          )}
+                        </summary>
+                        {project.summary}
+                      </details>
+                    </li>
+                  )
+                )}
+                <li>
+                  <details className="text-base">
+                    <summary>수료증</summary>
+                    <img
+                      src={certification42}
+                      className="w-1/2 "
+                      alt="42seoul certification"
+                    />
+                  </details>
+                </li>
+              </ul>
+            </details>
           </span>
         </li>
       </ul>

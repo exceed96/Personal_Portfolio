@@ -15,7 +15,7 @@ body {
 details > summary {
   list-style-type: "👉 ";
   cursor: pointer;
-  transition: margin 0.3s ease;
+  transition: margin 0.2s ease;
 }
 
 details[open] > summary {
