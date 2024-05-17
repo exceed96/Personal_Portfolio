@@ -15,7 +15,6 @@ import Firebase from "img/Tools/Firebase.svg";
 import Github from "img/Tools/Github.svg";
 import Figma from "img/Tools/Figma.svg";
 import Docker from "img/Tools/Docker.svg";
-
 import ProjectCheck from "img/ProjectModal/ProjectCheck.svg";
 import ProjectChecked from "img/ProjectModal/ProjectChecked.svg";
 import ProjectResult from "img/ProjectModal/ProjectResult.svg";

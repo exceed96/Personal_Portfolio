@@ -26,10 +26,10 @@ const ProjectList = (props: ProjectDataTypes): JSX.Element => {
             </strong>
           </section>
         </section>
-        <section className="p-1 md:p-2 border-[1px] border-solid border-black rounded-3xl mt-4 bg-black">
+        <section className="p-1 md:p-2 rounded-3xl mt-4 bg-[#7B7B7B]">
           <img
             src={props.mainImage}
-            className="border-[1px] border-solid border-black rounded-2xl"
+            className="rounded-2xl"
             alt="project img"
           />
         </section>
