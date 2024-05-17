@@ -23,6 +23,17 @@ details[open] > summary {
   margin-bottom: 20px;
 }
 
+.educationDetail > summary {
+  list-style-type: "📘 ";
+  cursor: pointer;
+  transition: margin 0.2s ease;
+}
+
+.educationDetail[open] > summary {
+  list-style-type: "📖 ";
+  margin-bottom: 24px;
+}
+
 .image-gallery-wrapper {
   margin-top: 5rem;
   max-width: 800px;

@@ -58,17 +58,19 @@ const Education = (): JSX.Element => {
               <ul>
                 {EDUCATION_PROJECT_DATA.map(
                   (project: EducationProjectDataType) => (
-                    <li className="flex flex-col mb-4">
-                      <details className="text-base">
-                        <summary>
-                          <span className="mr-3">{project.title}</span>
+                    <li className="flex flex-col mb-5">
+                      <details className="text-sm md:text-base educationDetail">
+                        <summary className="educationDetail">
+                          <span className="mr-3 text-base md:text-lg text-[#dfffff] ">
+                            {project.title}
+                          </span>
                           {project.github && (
                             <a href={project.github} className="text-base">
                               GitHub 바로가기
                             </a>
                           )}
                         </summary>
-                        {project.summary}
+                        📜&nbsp;{project.summary}
                       </details>
                     </li>
                   )
