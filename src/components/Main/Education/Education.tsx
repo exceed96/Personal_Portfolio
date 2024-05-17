@@ -50,8 +50,10 @@ const Education = (): JSX.Element => {
           </section>
           <span className="text-xl font-[Leferi-Bold] mt-4 text-[#eeffff] flex flex-col lg:flex-row">
             <details>
-              <summary className="text-base sm:text-lg md:text-xl lg:text-2xl">
-                42Seoul (2022.03.07 ~ 2023.12.29)
+              <summary className="text-base sm:text-lg md:text-xl lg:text-2xl cursor-pointer">
+                <span className="hover:ml-10 duration-200 transition-all">
+                  42Seoul (2022.03.07 ~ 2023.12.29)
+                </span>
               </summary>
               <ul>
                 {EDUCATION_PROJECT_DATA.map(

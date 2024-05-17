@@ -64,7 +64,7 @@ export const EDUCATION_PROJECT_DATA = [
   {
     title: "cub3d",
     summary:
-      "wolf3D(울펜슈테인)게임과 같이 레이캐스팅을 이용해 원시적인 3d게임을 구현하는 프로젝트",
+      "C언어로 wolf3D(울펜슈테인)게임과 같이 레이캐스팅 기법을 이용해 원시적인 3d게임을 구현하는 프로젝트",
   },
   {
     title: "ft_irc",
