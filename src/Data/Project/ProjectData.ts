@@ -128,7 +128,7 @@ const PROJECT_DATA = [
     type: "팀 프로젝트",
     composition: "FrontEnd 2, BackEnd 3, Designer 1",
     part: "FrontEnd",
-    period: "2024.03 ~ ",
+    period: "2024.03 ~ 2024.05",
     detail:
       '"Tscenping"프로젝트를 완성하고 나서 지인들의 피드백을 통해 전체 디자인 변경과 부가적인 기능을 추가한 Tscenping의 확장 웹 서비스입니다. 전체 디자인을 바꾸고 기존 "Tscenping"의 코드를 그대로 복사하는 게 아닌 처음부터 다시 시작하여서 기존에 문제가 되었던 혹은 아쉬웠던 기능들을 추가하고 보완한 프로젝트입니다.',
     stack: [
