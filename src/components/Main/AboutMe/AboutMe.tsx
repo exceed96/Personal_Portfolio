@@ -57,17 +57,6 @@ const AboutMe = (): JSX.Element => {
             임합니다.
           </span>
         </li>
-        {/* <li className="mt-8">
-          <h3 className="font-[Apple-Bold] text-[#73abfa] text-2xl flex items-start lg:items-center">
-            <img
-              src={AboutMeThree}
-              className={aboutMeImgStyle}
-              alt="aboutMe three"
-            />
-            <span className={aboutMeTitleStyle}></span>
-          </h3>
-          <span></span>
-        </li> */}
       </ul>
     </section>
   );

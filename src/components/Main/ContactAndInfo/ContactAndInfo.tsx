@@ -29,6 +29,7 @@ const ContactAndInfo = (): JSX.Element => {
         <a
           href="https://velog.io/@exceed96"
           className={`${infoStyle} hover:scale-110 hover:text-[#eeffff] duration-300`}
+          target="blank"
         >
           https://velog.io/@exceed96
         </a>
@@ -38,6 +39,7 @@ const ContactAndInfo = (): JSX.Element => {
         <a
           href="https://github.com/exceed96"
           className={`${infoStyle} hover:scale-110 hover:text-[#eeffff] duration-300`}
+          target="blank"
         >
           https://github.com/exceed96
         </a>
