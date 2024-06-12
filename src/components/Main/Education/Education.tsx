@@ -66,7 +66,7 @@ const Education = (): JSX.Element => {
                             {project.title}
                           </span>
                           {project.github && (
-                            <a href={project.github}>
+                            <a href={project.github} target="blank">
                               <img
                                 src={Github}
                                 alt="github"

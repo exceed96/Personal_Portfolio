@@ -210,6 +210,12 @@ const ProjectModal = (): JSX.Element => {
               ))}
             </ul>
           </li>
+          <li className={listStyle}>
+            <section className={listSectionStyle}>
+              <span className={listTitleStyle}>Link</span>
+            </section>
+            <span>전국 부실아파트 조회</span>
+          </li>
         </ul>
       </section>
       <section className="flex flex-col sm:flex-row w-full mt-12">
