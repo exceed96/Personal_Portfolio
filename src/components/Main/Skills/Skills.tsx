@@ -1,8 +1,60 @@
+import { useState, useEffect } from "react";
 import skills from "img/skill.webp";
-
 import SkillsData from "Data/SkillsData";
+import { Tooltip } from "react-tooltip";
+
+type TooltipStyle = {
+  width: string;
+  backgroundColor: string;
+  color: string;
+  fontSize: string;
+  textAlign: "left" | "right" | "center" | "justify";
+  padding?: string;
+};
 
 const Skills = (): JSX.Element => {
+  const [tooltipStyle, setTooltipStyle] = useState<TooltipStyle>({
+    width: "200px",
+    backgroundColor: "white",
+    color: "black",
+    fontSize: "12px",
+    textAlign: "left",
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setTooltipStyle({
+          width: "150px",
+          backgroundColor: "white",
+          color: "black",
+          fontSize: "10px",
+          textAlign: "left",
+        });
+      } else if (window.innerWidth < 1024) {
+        setTooltipStyle({
+          width: "200px",
+          backgroundColor: "white",
+          color: "black",
+          fontSize: "12px",
+          textAlign: "left",
+        });
+      } else {
+        setTooltipStyle({
+          width: "250px",
+          backgroundColor: "white",
+          color: "black",
+          fontSize: "14px",
+          textAlign: "left",
+        });
+      }
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <section id="skills" className="mt-20">
       <section className="text-4xl font-[Leferi-BlackOblique] border-b-2 border-[#b1b1b1] w-full pb-4 flex items-center">
@@ -18,32 +70,25 @@ const Skills = (): JSX.Element => {
           <span className="font-[Leferi-BlackOblique] sm:text-xl md:text-2xl lg:text-3xl border-b-4">
             FrontEnd
           </span>
-          <ul className="flex justify-start flex-col sm:flex-row sm:flex-wrap md:mt-8">
+          <ul className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-8 gap-4 mt-8">
             {SkillsData.stacks.map((stack, index) => (
               <li
                 key={index}
-                className="flex my-4 w-full md:w-1/2 hover:scale-110 duration-300 items-start"
+                className="flex w-full items-start hover:scale-110 duration-300"
+                data-tooltip-id={stack.name}
+                data-tooltip-html={stack.detail}
               >
-                <section className="w-1/6 md:w-1/5 flex flex-col items-center">
+                <section className="w-full flex flex-col items-center">
                   <img
                     src={stack.img}
-                    className="w-12 sm:w-16 md:w-20 lg:w-24 rounded-xl duration-300"
+                    className="w-16 md:w-20 lg:w-24 rounded-xl duration-300"
                     alt="project stack"
                   />
-                  <span className="xxs:text-[8px] sm:text-xs md:text-base font-[Leferi-BlackOblique]">
+                  <span className="text-xs sm:text-sm md:text-base font-[Leferi-BlackOblique] mt-2">
                     {stack.name}
                   </span>
                 </section>
-                <ul className="ml-8 w-5/6 md:w-4/5">
-                  {stack.detail.map((detail, index) => (
-                    <li
-                      key={index}
-                      className="text-base font-[Apple-Medium] list-disc text-start mt-1 lg:mr-10 break-all"
-                    >
-                      {detail}
-                    </li>
-                  ))}
-                </ul>
+                <Tooltip id={stack.name} place="top" style={tooltipStyle} />
               </li>
             ))}
           </ul>
@@ -52,23 +97,24 @@ const Skills = (): JSX.Element => {
           <span className="font-[Leferi-BlackOblique] sm:text-xl md:text-2xl lg:text-3xl border-b-4">
             Tools
           </span>
-          <ul className="flex flex-col md:flex-row md:flex-wrap mb-8 md:mt-8">
+          <ul className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-8 gap-4 mt-8">
             {SkillsData.tools.map((tool, index) => (
               <li
                 key={index}
-                className="flex my-4 w-full md:w-1/2 hover:scale-110 duration-300 items-start"
+                className="flex items-start hover:scale-110 duration-300"
+                data-tooltip-id={tool.name}
               >
-                <section className="w-1/6 md:w-1/5 flex flex-col items-center">
+                <section className="w-full flex flex-col items-center">
                   <img
                     src={tool.img}
-                    className="w-12 sm:w-16 md:w-20 lg:w-24 rounded-xl duration-300"
+                    className="w-16 md:w-20 lg:w-24 rounded-xl duration-300"
                     alt="project tool"
                   />
                   <span className="xxs:text-[8px] sm:text-xs md:text-base font-[Leferi-BlackOblique]">
                     {tool.name}
                   </span>
                 </section>
-                <ul className="ml-8 w-5/6 md:w-4/5">
+                {/* <ul className="ml-8 w-5/6 md:w-4/5">
                   {tool.detail.map((detail, index) => (
                     <li
                       key={index}
@@ -77,7 +123,8 @@ const Skills = (): JSX.Element => {
                       {detail}
                     </li>
                   ))}
-                </ul>
+                </ul> */}
+                <Tooltip id={tool.name} place="top" style={tooltipStyle} />
               </li>
             ))}
           </ul>

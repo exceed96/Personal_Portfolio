@@ -11,7 +11,7 @@ const ProjectList = (props: ProjectDataTypes): JSX.Element => {
   return (
     <li className="mb-12 py-4 px-4 sm:py-4 sm:px-6 md:py-6 md:px-8 lg:py-8 lg:px-10 w-full bg-[#1a1a1a]">
       <section className="flex flex-col w-full">
-        <section className="flex flex-col sm:flex-row items-center justify-between">
+        <section className="flex flex-col items-center sm:flex-row justify-between">
           <section className="flex flex-col items-center md:items-end sm:flex-row">
             <strong className="font-[Leferi-BlackOblique] text-base sm:text-2xl md:text-3xl lg:text-4xl text-[#eeffff]">
               "{props.name}"
