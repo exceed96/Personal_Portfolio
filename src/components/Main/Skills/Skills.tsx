@@ -103,6 +103,7 @@ const Skills = (): JSX.Element => {
                 key={index}
                 className="flex items-start hover:scale-110 duration-300"
                 data-tooltip-id={tool.name}
+                data-tooltip-html={tool.detail}
               >
                 <section className="w-full flex flex-col items-center">
                   <img
