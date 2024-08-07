@@ -1,7 +1,8 @@
-import WeakMain from "img/Projects/WeakApart/weak1.svg";
+import WeakMain from "img/Projects/WeakApart/weakMain.gif";
 import TscenMain from "img/Projects/Tscenping/Tscen1.svg";
 import InsteadMain from "img/Projects/Im/Im1.svg";
 import TscenRMain from "img/Projects/TscenpingV2/Game.gif";
+import KtWizMain from "img/Projects/KtWiz/ktWizMain.jpg";
 
 const PROJECT_DATA = [
   {
@@ -15,7 +16,7 @@ const PROJECT_DATA = [
     detail:
       "통합적인 메모 관리가 아닌 특정 URL을 추적하여서 메모를 저장하는 웹 확장 웹서비스입니다. 기존의 메모 확장 프로그램은 URL마다 구분 없이 통합적으로 메모를 저장하다 보니 저장한 메모가 많아진다면 특정 페이지에서 기억에 남기기 위해 저장한 메모를 찾는데 불편함을 겪은 경험을 토대로 직접 개발하여 사용하고자 한 프로젝트입니다.",
     stack: ["React", "CssModules", "JavaScript", "Redux", "Axios"],
-    tool: ["Github", "Figma"],
+    tool: ["Github", "Figma", "AWS"],
     majorFunction: [
       "Google, Naver api를 이용한 로그인 구현",
       "Whale manifests를 통한 URL추적",
@@ -140,7 +141,7 @@ const PROJECT_DATA = [
       "Socket",
       "Axios",
     ],
-    tool: ["Github", "Figma", "Firebase"],
+    tool: ["Github", "Figma", "Firebase", "AWS"],
     majorFunction: [
       "42, Google api를 이용한 로그인",
       "2차 인증을 통한 로그인 강화",
@@ -197,19 +198,11 @@ const PROJECT_DATA = [
     type: "팀 프로젝트",
     composition: "FrontEnd 1, BackEnd 1, Designer 1",
     part: "FrontEnd",
-    period: "2024.04 ~ ",
+    period: "2024.04 ~ 2024.07",
     detail:
       "전국의 부실 아파트를 지도검색을 통해서 조회하고 해당 아파트의 건축정보를 확인할 수 있는 서비스입니다. 2023년에 수면 위로 올라온 부실 아파트 정보들은 뉴스로만 접할 수 있고 뉴스마다 제공하는 부실 아파트 정보들이 다르기 때문에 이를 통합적으로 관리하고 해당 뉴스들도 제공하면 부실 아파트에 대해 관심이 많은 사용자들에게 좋은 경험을 제공할 수 있을 거 같다는 지인과 대화를 통해서 시작하게 된 프로젝트입니다.",
-    stack: [
-      "Next",
-      "React",
-      "TypeScript",
-      "Tailwind",
-      "Zustand",
-      "ReactQuery",
-      "Axios",
-    ],
-    tool: ["Github", "Figma"],
+    stack: ["Next", "React", "TypeScript", "Tailwind", "Zustand", "ReactQuery"],
+    tool: ["Github", "Figma", "Vercel"],
     majorFunction: [
       "전국 부실아파트 지도 검색",
       "검색한 아파트의 자세한 건축정보 확인",
@@ -220,9 +213,80 @@ const PROJECT_DATA = [
       "네이버 지도 api 연결하여 지도 렌더링",
       "검색한 정보를 토대로 네이버 지도 렌더링 변경 및 마커 표시",
       "렌더링 된 마커 클릭 시 해당 부실아파트에 대한 건축 정보 데이터 호출",
-      "ReactQuery를 이용한 부실아파트 관련 뉴스 페이지네이션 구현",
+      "커스텀 페이지네이션 기능 구현",
     ],
-    result: [],
+    result: [
+      {
+        title: "서버사이드 데이터 페칭: 최적화된 렌더링과 향상된 사용자 경험",
+        content:
+          "✅ 서버 컴포넌트에서 서버 사이드 데이터 페칭을 활용하여 렌더링을 최적화하고, 클라이언트에서 발생하는 사이드 이펙트를 최소화함으로써 사용자의 경험을 향상시켰습니다. 이를 통해 페이지 로딩 속도가 빨라지고, 사용자 인터페이스의 반응성이 좋아졌습니다.",
+      },
+      {
+        title: "커스텀 페이지네이션: 제한된 환경에서의 기능 구현",
+        content:
+          "✅ 기존 페이지네이션 패키지를 사용하지 않고 직접 커스텀 페이지네이션을 구현함으로써, 제한된 환경에서도 기능을 직접 개발하는 경험을 쌓았습니다.",
+      },
+    ],
+  },
+  {
+    name: "KT Wiz AI 분석 페이지 만들기",
+    mainImage: KtWizMain,
+    key: "ktWiz",
+    type: "팀 프로젝트",
+    composition: "FrontEnd 3, BackEnd 2",
+    part: "FrontEnd, BackEnd",
+    period: "2024.06 ~ 2024.07",
+    detail:
+      '기존 "KT Wiz"홈페이지에서 기존 사용자의 방문빈도 증가와 새로운 사용자의 유입을 위한 AI기능 구상 및 구현, 기존 UI/UX를 개선하는 프로젝트 입니다.',
+    stack: [
+      "React",
+      "TypeScript",
+      "Next",
+      "Tailwind",
+      "Zustand",
+      "Socket",
+      "Express",
+    ],
+    tool: ["Github", "Figma", "Firebase", "AWS"],
+    majorFunction: [
+      "오늘의 경기 각 팀의 승리확률 예측 기능",
+      "투수 vs 타자 승부 예측",
+      "재미로 보는 선발투수 운세",
+      "구장 주요시설 혼잡도",
+      "실시간 채팅 및 클린 봇",
+      "데일리 퀴즈 / 랭킹",
+      "실시간 경기 정보 제공",
+      "포인트 시스템",
+      "기존 홈페이지 UI/UX개선",
+    ],
+    myFunction: [
+      "유저들간의 실시간 채팅 구현",
+      "채팅 서버 구축 및 Firebase 연결",
+      "메인페이지 UI/UX 개선",
+      "메인페이지 AI기능 API 연결 및 기능 고도화",
+    ],
+    result: [
+      {
+        title: "팀장과 PM 역할: 리더십과 의사결정의 중요성 체험",
+        content:
+          "✅ 처음으로 팀장과 PM 역할을 맡아 프로젝트에 참여했습니다. 팀원으로 참여할 때는 몰랐던 점들이 많았지만, PM과 팀장 역할을 수행하면서 그 중요성과 순간의 선택이 팀과 팀원의 방향을 결정할 수 있음을 몸소 실감했습니다.",
+      },
+      {
+        title: "이미지 전송 기능 추가: 실시간 채팅의 소통 확장",
+        content:
+          "✅ 기존에 구현했던 실시간 채팅 기능은 텍스트만 전달할 수 있었으나, 이번에는 이미지 전송 기능을 추가하여 유저들 간의 대화 수단을 확장했습니다. 이를 통해 사용자들은 더 풍부한 소통을 할 수 있게 되었고, 채팅 경험이 한층 향상되었습니다.",
+      },
+      {
+        title: "실시간 채팅 서버: Express와 Firebase를 통한 구현",
+        content:
+          "✅ Express와 Firebase를 통해 소켓 연결과 직접 채팅 서버 API를 구현함으로써, 서버의 성능과 확장성을 향상시켰습니다. 이를 통해 사용자들에게 더욱 원활한 실시간 채팅 경험을 제공하였습니다.",
+      },
+      {
+        title: "Node.js 성능 개선: PM2를 활용한 멀티 프로세스 구조 구현",
+        content:
+          "✅ Node.js는 싱글 스레드 특성상 높은 트래픽 상황에서 성능 저하가 발생할 수 있습니다. 이를 해결하기 위해 PM2 패키지를 활용하여 멀티 프로세스 구조를 구현했습니다. 이 방식으로 클라우드 자원을 효율적으로 사용하면서 동시에 들어오는 요청을 여러 프로세스에 분산시켜 처리함으로써 실시간 채팅 시스템의 전반적인 성능을 개선했습니다.",
+      },
+    ],
   },
 ];
 

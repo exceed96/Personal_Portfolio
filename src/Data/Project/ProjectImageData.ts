@@ -29,10 +29,10 @@ import TscenR14 from "img/Projects/TscenpingV2/TscenR14.svg";
 import TscenGame from "img/Projects/TscenpingV2/Game.gif";
 import TscenChatting from "img/Projects/TscenpingV2/Chatting.gif";
 
-import Weak1 from "img/Projects/WeakApart/weak1.svg";
-import Weak2 from "img/Projects/WeakApart/weak2.svg";
-import Weak3 from "img/Projects/WeakApart/weak3.svg";
-import Weak4 from "img/Projects/WeakApart/weak4.svg";
+import Weak1 from "img/Projects/WeakApart/weak1.png";
+import Weak2 from "img/Projects/WeakApart/weak2.png";
+import Weak3 from "img/Projects/WeakApart/weak3.png";
+import WeakMain2 from "img/Projects/WeakApart/weakMain2.gif";
 
 import Im1 from "img/Projects/Im/Im1.svg";
 import Im2 from "img/Projects/Im/Im2.svg";
@@ -41,6 +41,14 @@ import Im4 from "img/Projects/Im/Im4.svg";
 import Im5 from "img/Projects/Im/Im5.svg";
 import Im6 from "img/Projects/Im/Im6.svg";
 import Im7 from "img/Projects/Im/Im7.svg";
+
+import Kt1 from "img/Projects/KtWiz/기능1.gif";
+import Kt2 from "img/Projects/KtWiz/기능2.gif";
+import Kt3 from "img/Projects/KtWiz/기능3.gif";
+import Kt4 from "img/Projects/KtWiz/기능4.gif";
+import Kt5 from "img/Projects/KtWiz/기능5.gif";
+import Kt6 from "img/Projects/KtWiz/기능6.gif";
+import Kt7 from "img/Projects/KtWiz/기능7.gif";
 
 export const PROJECT_TSCENPING_DATA = [
   { original: Tscen1 },
@@ -80,8 +88,8 @@ export const PROJECT_TSCENPINGV2_DATA = [
 export const PROJECT_WEAK_DATA = [
   { original: Weak1 },
   { original: Weak2 },
+  { original: WeakMain2 },
   { original: Weak3 },
-  { original: Weak4 },
 ];
 
 export const PROJECT_INSTEAD_DATA = [
@@ -92,4 +100,14 @@ export const PROJECT_INSTEAD_DATA = [
   { original: Im5 },
   { original: Im6 },
   { original: Im7 },
+];
+
+export const PROJECT_KTWIZ_DATA = [
+  { original: Kt1 },
+  { original: Kt2 },
+  { original: Kt3 },
+  { original: Kt4 },
+  { original: Kt5 },
+  { original: Kt6 },
+  { original: Kt7 },
 ];

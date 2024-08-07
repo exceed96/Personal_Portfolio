@@ -11,10 +11,13 @@ import Zustand from "img/Library/Zustand.svg";
 import Socket from "img/Library/Socket.svg";
 import TailWind from "img/Library/Tailwind.svg";
 import ReactQuery from "img/Library/ReactQuery.svg";
+import Express from "img/Library/Express.svg";
 import Firebase from "img/Tools/Firebase.svg";
 import Github from "img/Tools/Github.svg";
 import Figma from "img/Tools/Figma.svg";
 import Docker from "img/Tools/Docker.svg";
+import Vercel from "img/Tools/Vercel.svg";
+import AWS from "img/Tools/AWS.svg";
 import ProjectCheck from "img/ProjectModal/ProjectCheck.svg";
 import ProjectChecked from "img/ProjectModal/ProjectChecked.svg";
 import ProjectResult from "img/ProjectModal/ProjectResult.svg";
@@ -27,6 +30,7 @@ import {
   PROJECT_TSCENPINGV2_DATA,
   PROJECT_INSTEAD_DATA,
   PROJECT_WEAK_DATA,
+  PROJECT_KTWIZ_DATA,
 } from "Data/Project/ProjectImageData";
 
 import { resultTypes } from "Types/ProjectType";
@@ -36,7 +40,7 @@ const ProjectModal = (): JSX.Element => {
 
   const listStyle = "flex items-start flex-col md:flex-row text-base mt-8";
   const listTitleStyle =
-    "font-[Leferi-BlackOblique] text-[#82AAFF] md:mr-4 text-lg md:text-xl";
+    "font-[Leferi-BlackOblique] text-[#82AAFF] md:mr-4 text-lg lg:text-xl";
   const listSectionStyle = "md:w-1/4 flex items-center self-center";
   const listSpanStyle =
     "text-start md:w-3/4 self-center font-[Apple-Black] text-base sm:text-lg md:text-xl md:ml-8";
@@ -55,6 +59,10 @@ const ProjectModal = (): JSX.Element => {
         return Firebase;
       case "Docker":
         return Docker;
+      case "Vercel":
+        return Vercel;
+      case "AWS":
+        return AWS;
       default:
         return "";
     }
@@ -86,6 +94,8 @@ const ProjectModal = (): JSX.Element => {
         return TailWind;
       case "ReactQuery":
         return ReactQuery;
+      case "Express":
+        return Express;
       default:
         return "";
     }
@@ -101,6 +111,10 @@ const ProjectModal = (): JSX.Element => {
         return "https://github.com/tscenping/tscenping";
       case "전국 부실아파트 조회":
         return "https://github.com/poorapartment/FE";
+      case "KT Wiz AI 분석 페이지 만들기":
+        return "https://github.com/KT-Kimbu-net";
+      default:
+        return "";
     }
   };
 
@@ -114,6 +128,8 @@ const ProjectModal = (): JSX.Element => {
         return PROJECT_TSCENPINGV2_DATA;
       case "전국 부실아파트 조회":
         return PROJECT_WEAK_DATA;
+      case "KT Wiz AI 분석 페이지 만들기":
+        return PROJECT_KTWIZ_DATA;
     }
   };
 
@@ -130,7 +146,7 @@ const ProjectModal = (): JSX.Element => {
             <section className={listSectionStyle}>
               <span className={listTitleStyle}>Title</span>
             </section>
-            <span className="w-3/4 font-[Leferi-BlackOblique] text-lg sm:text-xl md:text-2xl lg:text-3xl">
+            <span className="w-full md:w-3/4 font-[Leferi-BlackOblique] text-base sm:text-2xl md:text-3xl">
               "{modalProps?.name}"
             </span>
           </li>
@@ -138,7 +154,7 @@ const ProjectModal = (): JSX.Element => {
             <section className={listSectionStyle}>
               <span className={listTitleStyle}>Detail</span>
             </section>
-            <span className="text-start w-full md:w-3/4 break-all md:ml-8">
+            <span className="text-start w-full md:w-3/4 break-all md:ml-8 text-sm md:text-base">
               {modalProps?.detail}
             </span>
           </li>
@@ -200,6 +216,7 @@ const ProjectModal = (): JSX.Element => {
                   />
                   {tool === "Github" && (
                     <a
+                      target="__blank"
                       href={getGithubUrl(modalProps.name)}
                       className="text-sm font-[Apple-Black]"
                     >
@@ -210,12 +227,12 @@ const ProjectModal = (): JSX.Element => {
               ))}
             </ul>
           </li>
-          <li className={listStyle}>
+          {/* <li className={listStyle}>
             <section className={listSectionStyle}>
               <span className={listTitleStyle}>Link</span>
             </section>
             <span>전국 부실아파트 조회</span>
-          </li>
+          </li> */}
         </ul>
       </section>
       <section className="flex flex-col sm:flex-row w-full mt-12">

@@ -1,6 +1,7 @@
 import aboutMe from "img/aboutMe.webp";
 import AboutMeOne from "img/AboutMe/AboutMeOne.svg";
 import AboutMeTwo from "img/AboutMe/AboutMeTwo.svg";
+import AboutMeThree from "img/AboutMe/AboutMeThree.svg";
 
 const AboutMe = (): JSX.Element => {
   const aboutMeImgStyle = "mr-4 w-6 sm:w-6 md:w-7 lg:w-8";
@@ -35,7 +36,7 @@ const AboutMe = (): JSX.Element => {
             성장했습니다. 그 결과, 저는 프론트엔드 개발 분야의 폭넓은 경험과
             이해를 쌓을 수 있었고, 이를&nbsp;
             <strong className="underline">블로그</strong>를 통해 다른 이들과
-            공유하였습니다. 이 과정에서 60개 이상의 포스팅을 작성하였습니다.
+            공유하였습니다. 이 과정에서 70개 이상의 포스팅을 작성하였습니다.
           </span>
         </li>
         <li className="mt-8 flex flex-col">
@@ -55,6 +56,26 @@ const AboutMe = (): JSX.Element => {
             서비스를 고민하며, 기존 서비스를 계속해서 발전시켜 사용자 경험을
             향상시키고 새로운 사용자를 유입시킬 수 있는 방법을 탐구하며 개발에
             임합니다.
+          </span>
+        </li>
+        <li className="mt-8 flex flex-col">
+          <h3 className="font-[Apple-Bold] text-[#73abfa] text-2xl flex items-start lg:items-center">
+            <img
+              src={AboutMeThree}
+              className={aboutMeImgStyle}
+              alt="aboutMe three"
+            />
+            <span className={aboutMeTitleStyle}>
+              신기술을 습득하고 내재화하는 데 큰 열정을 가지고 있으며, 새로운
+              도전을 기꺼이 받아들이고 해결해 나갑니다.
+            </span>
+          </h3>
+          <span className={aboutMeContentStyle}>
+            빠르게 변화하는 프론트엔드 기술 스택에 뒤처지지 않기 위해, 끊임없이
+            공부하고 구현하며 스스로에게 "왜 요즘은 이걸 쓸까?", "왜 이렇게 하는
+            걸까?" 라는 질문을 던집니다. 이러한 질문들을 통해 새로운 기술과
+            방법론을 내재화하고, 그 과정에서 얻은 통찰을 바탕으로 지속적으로
+            발전하며 문제를 해결해 나갑니다.
           </span>
         </li>
       </ul>
