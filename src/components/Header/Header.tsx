@@ -2,7 +2,7 @@ import ScrollProgress from "./ScrollProgress";
 
 const Header = (): JSX.Element => {
   const navListStyle =
-    "px-4 text-[#eeffff] text-center xxs:text-[8px] xs:text-[12px] sm:text-base md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-[Leferi-BlackOblique] cursor-pointer transition-transform duration-300 transform w-screen hover:scale-110";
+    "px-4 text-[#eeffff] text-center xxs:text-[10px] xs:text-[12px] sm:text-base md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-[Leferi-BlackOblique] cursor-pointer transition-transform duration-300 transform w-screen hover:scale-110";
 
   const scrollToSection = (sectionId: string) => {
     const yOffset = -100;

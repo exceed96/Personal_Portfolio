@@ -49,20 +49,20 @@ const Education = (): JSX.Element => {
             />
             <h3 className={educatoinTitleStyle}>그 외 교육</h3>
           </section>
-          <span className="text-xl font-[Leferi-Bold] mt-4 text-[#eeffff] flex flex-col lg:flex-row">
+          <div className="text-xl font-[Leferi-Bold] mt-4 text-[#eeffff] flex flex-col gap-10">
             <details>
               <summary className="text-base sm:text-lg md:text-xl lg:text-2xl cursor-pointer">
                 <span className="hover:ml-10 duration-200 transition-all">
                   42Seoul (2022.03.07 ~ 2023.12.29)
                 </span>
               </summary>
-              <ul>
+              <ul className="grid grid-cols-2">
                 {EDUCATION_PROJECT_DATA.map(
                   (project: EducationProjectDataType) => (
                     <li className="flex flex-col mb-5">
                       <details className="text-base md:text-lg educationDetail">
                         <summary className="flex items-center">
-                          <span className="mr-3 text-lg md:text-xl text-[#dfffff] font-[Apple-Light]">
+                          <span className="mr-1 xs:mr-3 text-sm md:text-xl text-[#dfffff] font-[Apple-Light]">
                             {project.title}
                           </span>
                           {project.github && (
@@ -70,12 +70,12 @@ const Education = (): JSX.Element => {
                               <img
                                 src={Github}
                                 alt="github"
-                                className="w-5 sm:w-6 md:w-7 rounded-[4px]"
+                                className="w-4 xs:w-5 sm:w-6 md:w-7 rounded-[4px]"
                               />
                             </a>
                           )}
                         </summary>
-                        <section className="ml-5 break-words text-base md:text-lg font-[Apple-Medium]">
+                        <section className="ml-3 break-words text-sm md:text-lg font-[Apple-Medium]">
                           📜&nbsp;{project.summary}
                         </section>
                       </details>
@@ -94,7 +94,19 @@ const Education = (): JSX.Element => {
                 </li>
               </ul>
             </details>
-          </span>
+            <details>
+              <summary className="text-base sm:text-lg md:text-xl lg:text-2xl cursor-pointer">
+                <span className="hover:ml-10 duration-200 transition-all">
+                  프로젝트 캠프 Next.JS (2024.05.24 ~ 2024.08.02)
+                </span>
+              </summary>
+              <section className="text-sm xs:text-base">
+                스나이퍼 팩토리의 Next.JS 교육은 3주간 사전직무교육을 통해
+                JavaScript, TypeScript, React, Next의 개념들을 배우고 7주간
+                기업연계프로젝트를 통해서 완성된 결과물을 만드는 교육입니다.
+              </section>
+            </details>
+          </div>
         </li>
       </ul>
     </section>

@@ -40,7 +40,7 @@ const ProjectModal = (): JSX.Element => {
 
   const listStyle = "flex items-start flex-col md:flex-row text-base mt-8";
   const listTitleStyle =
-    "font-[Leferi-BlackOblique] text-[#82AAFF] md:mr-4 text-lg lg:text-xl";
+    "font-[Leferi-BlackOblique] text-[#82AAFF] md:mr-4 text-base xs:text-lg lg:text-xl";
   const listSectionStyle = "md:w-1/4 flex items-center self-center";
   const listSpanStyle =
     "text-start md:w-3/4 self-center font-[Apple-Black] text-base sm:text-lg md:text-xl md:ml-8";
@@ -190,12 +190,12 @@ const ProjectModal = (): JSX.Element => {
             <section className={listSectionStyle}>
               <span className={listTitleStyle}>Stack</span>
             </section>
-            <ul className="flex flex-wrap w-full md:w-3/4 md:mt-2">
+            <ul className="grid grid-cols-3 sm:flex sm:flex-wrap w-full md:w-3/4 md:mt-2 gap-4 sm:ml-5">
               {modalProps?.stack.map((stack) => (
-                <li className="px-4 pb-2">
+                <li className="flex justify-center">
                   <img
                     src={getImgSrc(stack)}
-                    className="w-14 rounded-2xl"
+                    className="w-12 xs:w-14 rounded-2xl"
                     alt="project imgs"
                   />
                 </li>
@@ -206,12 +206,12 @@ const ProjectModal = (): JSX.Element => {
             <section className={listSectionStyle}>
               <span className={listTitleStyle}>Tool</span>
             </section>
-            <ul className="flex flex-wrap w-full md:w-3/4 md:mt-2">
+            <ul className="grid grid-cols-3 sm:flex sm:flex-wrap w-full md:w-3/4 md:mt-2 gap-4 sm:ml-5">
               {modalProps?.tool.map((tool) => (
-                <li className="px-4 pb-2">
+                <li className="flex flex-col items-center">
                   <img
                     src={getToolImgSrc(tool)}
-                    className="w-14 rounded-2xl"
+                    className="w-12 xs:w-14 rounded-2xl"
                     alt="project tool"
                   />
                   {tool === "Github" && (

@@ -70,21 +70,21 @@ const Skills = (): JSX.Element => {
           <span className="font-[Leferi-BlackOblique] sm:text-xl md:text-2xl lg:text-3xl border-b-4">
             FrontEnd
           </span>
-          <ul className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-8 gap-4 mt-8">
+          <ul className="w-full grid grid-cols-4 sm:flex sm:flex-wrap sm:flex-row sm:justify-center items-center gap-10 mt-8">
             {SkillsData.stacks.map((stack, index) => (
               <li
                 key={index}
-                className="flex w-full items-start hover:scale-110 duration-300"
+                className="flex items-start hover:scale-110 duration-300 justify-center "
                 data-tooltip-id={stack.name}
                 data-tooltip-html={stack.detail}
               >
                 <section className="w-full flex flex-col items-center">
                   <img
                     src={stack.img}
-                    className="w-16 md:w-20 lg:w-24 rounded-xl duration-300"
+                    className="w-10 xs:w-12 sm:w-16 md:w-20 lg:w-24 rounded xs:rounded-md sm:rounded-lg md:rounded-xl duration-300"
                     alt="project stack"
                   />
-                  <span className="text-xs sm:text-sm md:text-base font-[Leferi-BlackOblique] mt-2">
+                  <span className="xxs:text-[6px] xs:text-[8px] sm:text-xs md:text-base font-[Leferi-BlackOblique] mt-2 w-full text-wrap">
                     {stack.name}
                   </span>
                 </section>
@@ -97,7 +97,7 @@ const Skills = (): JSX.Element => {
           <span className="font-[Leferi-BlackOblique] sm:text-xl md:text-2xl lg:text-3xl border-b-4">
             Tools
           </span>
-          <ul className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-8 gap-4 mt-8">
+          <ul className="w-full grid grid-cols-4 sm:flex flex-wrap justify-center items-center gap-10 mt-8">
             {SkillsData.tools.map((tool, index) => (
               <li
                 key={index}
@@ -108,7 +108,7 @@ const Skills = (): JSX.Element => {
                 <section className="w-full flex flex-col items-center">
                   <img
                     src={tool.img}
-                    className="w-16 md:w-20 lg:w-24 rounded-xl duration-300"
+                    className="w-10 xs:w-12 sm:w-16 md:w-20 lg:w-24 rounded xs:rounded-md sm:rounded-lg md:rounded-xl duration-300"
                     alt="project tool"
                   />
                   <span className="xxs:text-[8px] sm:text-xs md:text-base font-[Leferi-BlackOblique]">
