@@ -13,7 +13,7 @@ const ProjectList = (props: ProjectDataTypes): JSX.Element => {
       <section className="flex flex-col w-full">
         <section className="flex flex-col items-center sm:flex-row justify-between">
           <section className="flex flex-col items-center md:items-end sm:flex-row">
-            <strong className="font-[Leferi-BlackOblique] text-base sm:text-2xl md:text-3xl lg:text-4xl text-[#eeffff] [text-shadow:1px_1px_0_rgb(255,255,255)]">
+            <strong className="font-[Leferi-BlackOblique] text-base sm:text-2xl md:text-3xl lg:text-4xl text-[#eeffff] [text-shadow:1px_0.5px_0_rgb(255,255,255)]">
               "{props.name}"
             </strong>
             <strong className="mt-2 lg:mt-0 md:ml-4 font-[Leferi-BlackOblique] text-sm md:text-base text-[#eeffff]">

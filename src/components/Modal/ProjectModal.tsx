@@ -150,7 +150,7 @@ const ProjectModal = (): JSX.Element => {
             <section className={listSectionStyle}>
               <span className={listTitleStyle}>Title</span>
             </section>
-            <span className="w-full md:w-3/4 font-[Leferi-BlackOblique] text-base sm:text-2xl md:text-3xl [text-shadow:1px_1px_0_rgb(255,255,255)]">
+            <span className="w-full md:w-3/4 font-[Leferi-BlackOblique] text-base sm:text-2xl md:text-3xl [text-shadow:1px_0.5px_0_rgb(255,255,255)]">
               "{modalProps?.name}"
             </span>
           </li>
