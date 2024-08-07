@@ -34,13 +34,13 @@ const SkillsData = {
         "flex, grid 등 다양한 정렬 요소들을 능숙하게 사용합니다.<br><br>가상 클래스, animation속성을 이용한 간단한 애니메이션을 구현할 수 있습니다.",
     },
     {
-      name: "Java Script",
+      name: "JavaScript",
       img: JavaScript,
       detail:
         "ES6 문법을 능숙하게 사용할 수 있습니다.<br><br>JavaScript의 내부 동작 방식을 이해하고 학습하였습니다.",
     },
     {
-      name: "Type Script",
+      name: "TypeScript",
       img: TypeScript,
       detail:
         "interface, type 등 각종 타입 지정에 필요한 TypeScript의 타입 지정 기능들을 능숙하게 사용할 수 있습니다.",
@@ -70,7 +70,7 @@ const SkillsData = {
         "Zustand를 이용하여 컴포넌트의 상태변수들을 관리 한 경험이 있습니다.",
     },
     {
-      name: "React Query",
+      name: "ReactQuery",
       img: ReactQuery,
       detail:
         "ReactQuery를 이용하여 정적 데이터들을 캐싱 화하여 사용할 수 있습니다.",
@@ -81,7 +81,7 @@ const SkillsData = {
       detail: "SCSS를 이용하여 기존의 Css-in-Css를 관리해 본 경험이 있습니다.",
     },
     {
-      name: "Css Modules",
+      name: "CssModules",
       img: CssModules,
       detail:
         "Css Modules를 이용하여 스타일 요소의 클래스를 효율적으로 관리할 수 있습니다.",

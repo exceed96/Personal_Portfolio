@@ -21,6 +21,9 @@ const Skills = (): JSX.Element => {
     textAlign: "left",
   });
 
+  const skillToolContainerStyle =
+    "w-full grid grid-cols-4 sm:flex sm:flex-wrap sm:flex-row sm:justify-center items-center gap-2 xs:gap-4 sm:gap-10 mt-8";
+
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
@@ -70,7 +73,7 @@ const Skills = (): JSX.Element => {
           <span className="font-[Leferi-BlackOblique] sm:text-xl md:text-2xl lg:text-3xl border-b-4">
             FrontEnd
           </span>
-          <ul className="w-full grid grid-cols-4 sm:flex sm:flex-wrap sm:flex-row sm:justify-center items-center gap-10 mt-8">
+          <ul className={skillToolContainerStyle}>
             {SkillsData.stacks.map((stack, index) => (
               <li
                 key={index}
@@ -97,7 +100,7 @@ const Skills = (): JSX.Element => {
           <span className="font-[Leferi-BlackOblique] sm:text-xl md:text-2xl lg:text-3xl border-b-4">
             Tools
           </span>
-          <ul className="w-full grid grid-cols-4 sm:flex flex-wrap justify-center items-center gap-10 mt-8">
+          <ul className={skillToolContainerStyle}>
             {SkillsData.tools.map((tool, index) => (
               <li
                 key={index}

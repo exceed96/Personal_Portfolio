@@ -38,7 +38,8 @@ import { resultTypes } from "Types/ProjectType";
 const ProjectModal = (): JSX.Element => {
   const { modalProps } = useModalState();
 
-  const listStyle = "flex items-start flex-col md:flex-row text-base mt-8";
+  const listStyle =
+    "flex items-start flex-col md:flex-row text-base mt-4 xs:mt-6 sm:mt-8";
   const listTitleStyle =
     "font-[Leferi-BlackOblique] text-[#82AAFF] md:mr-4 text-base xs:text-lg lg:text-xl";
   const listSectionStyle = "md:w-1/4 flex items-center self-center";
@@ -47,7 +48,10 @@ const ProjectModal = (): JSX.Element => {
 
   const functionTitleStyle =
     "self-start text-base sm:text-lg md:text-xl font-[Leferi-BlackOblique] flex items-center mb-2";
-  const functionTitleImgStyle = "mr-4";
+  const functionTitleImgStyle = "mr-2 xs:mr-3 sm:mr-4 w-4 h-4 sm:w-6 sm:h-6";
+
+  const stackAndToolContainerStyle =
+    "grid grid-cols-4 sm:flex sm:flex-wrap w-full md:w-3/4 md:mt-2 gap-4 sm:ml-5 mt-2 sm:mt-0";
 
   const getToolImgSrc = (toolName: string): string => {
     switch (toolName) {
@@ -136,7 +140,7 @@ const ProjectModal = (): JSX.Element => {
   const projectImg = getProjectImgSrc(modalProps!.name) || PROJECT_INSTEAD_DATA;
 
   return (
-    <section className="flex flex-col items-start h-[480px] sm:h-[1080px] overflow-y-auto scrollbar-hide">
+    <section className="flex flex-col items-start h-full sm:h-[1080px] overflow-y-auto scrollbar-hide">
       <section className="flex w-full flex-col md:flex-col lg:flex-col xl:flex-col">
         <section className="w-full mr-10 p-1 sm:p-2 bg-black rounded-3xl">
           <ImageGallery showPlayButton={false} items={projectImg} />
@@ -146,7 +150,7 @@ const ProjectModal = (): JSX.Element => {
             <section className={listSectionStyle}>
               <span className={listTitleStyle}>Title</span>
             </section>
-            <span className="w-full md:w-3/4 font-[Leferi-BlackOblique] text-base sm:text-2xl md:text-3xl">
+            <span className="w-full md:w-3/4 font-[Leferi-BlackOblique] text-base sm:text-2xl md:text-3xl [text-shadow:1px_1px_2px_rgb(255,255,255)]">
               "{modalProps?.name}"
             </span>
           </li>
@@ -190,7 +194,7 @@ const ProjectModal = (): JSX.Element => {
             <section className={listSectionStyle}>
               <span className={listTitleStyle}>Stack</span>
             </section>
-            <ul className="grid grid-cols-3 sm:flex sm:flex-wrap w-full md:w-3/4 md:mt-2 gap-4 sm:ml-5">
+            <ul className={stackAndToolContainerStyle}>
               {modalProps?.stack.map((stack) => (
                 <li className="flex justify-center">
                   <img
@@ -206,7 +210,7 @@ const ProjectModal = (): JSX.Element => {
             <section className={listSectionStyle}>
               <span className={listTitleStyle}>Tool</span>
             </section>
-            <ul className="grid grid-cols-3 sm:flex sm:flex-wrap w-full md:w-3/4 md:mt-2 gap-4 sm:ml-5">
+            <ul className={stackAndToolContainerStyle}>
               {modalProps?.tool.map((tool) => (
                 <li className="flex flex-col items-center">
                   <img
@@ -250,10 +254,10 @@ const ProjectModal = (): JSX.Element => {
               <li className="text-sm md:text-base text-[#eeffff] text-start flex mb-2">
                 <img
                   src={ProjectCheck}
-                  className="mr-4"
+                  className="mr-2 xs:mr-3 sm:mr-4 w-4 h-4 sm:w-6 sm:h-6"
                   alt="major work list icon"
                 />
-                {major}
+                <span>{major}</span>
               </li>
             ))}
           </ul>
@@ -272,10 +276,10 @@ const ProjectModal = (): JSX.Element => {
               <li className="text-sm md:text-base text-[#eeffff] text-start flex mb-2">
                 <img
                   src={ProjectChecked}
-                  className="mr-4"
+                  className="mr-2 xs:mr-3 sm:mr-4 w-4 h-4 sm:w-6 sm:h-6 self-start"
                   alt="my work list icon"
                 />
-                {my}
+                <span>{my}</span>
               </li>
             ))}
           </ul>

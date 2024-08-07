@@ -100,7 +100,7 @@ const Education = (): JSX.Element => {
                   프로젝트 캠프 Next.JS (2024.05.24 ~ 2024.08.02)
                 </span>
               </summary>
-              <section className="text-sm xs:text-base">
+              <section className="text-xs xs:text-sm sm:text-base md:text-lg">
                 스나이퍼 팩토리의 Next.JS 교육은 3주간 사전직무교육을 통해
                 JavaScript, TypeScript, React, Next의 개념들을 배우고 7주간
                 기업연계프로젝트를 통해서 완성된 결과물을 만드는 교육입니다.

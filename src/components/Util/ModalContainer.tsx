@@ -16,7 +16,7 @@ const ModalLayout = (): JSX.Element => {
 
 const ModalContent = (): JSX.Element => {
   return (
-    <div className="z-30 flex flex-col jusfify-content center fixed top-1/2 left-1/2  xxs:min-w-[280px] xs:min-w-[360px] sm:min-w-[600px] md:min-w-[800px] xl:min-w-[1200px]  text-center text-white px-4 py-5 transform -translate-x-1/2 -translate-y-1/2 bg-[#404040] text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl rounded-2xl">
+    <div className="h-4/5 z-30 flex flex-col jusfify-content center fixed top-1/2 left-1/2  xxs:min-w-[280px] xs:min-w-[360px] sm:min-w-[600px] md:min-w-[800px] xl:min-w-[1200px] text-center text-white px-4 py-5 transform -translate-x-1/2 -translate-y-1/2 bg-[#404040] text-xs sm:text-base md:text-lg lg:text-xl xl:text-2xl rounded-2xl">
       <ProjectModal />
     </div>
   );
