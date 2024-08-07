@@ -42,13 +42,13 @@ import Im5 from "img/Projects/Im/Im5.svg";
 import Im6 from "img/Projects/Im/Im6.svg";
 import Im7 from "img/Projects/Im/Im7.svg";
 
-import Kt1 from "img/Projects/KtWiz/기능1.gif";
-import Kt2 from "img/Projects/KtWiz/기능2.gif";
-import Kt3 from "img/Projects/KtWiz/기능3.gif";
-import Kt4 from "img/Projects/KtWiz/기능4.gif";
-import Kt5 from "img/Projects/KtWiz/기능5.gif";
-import Kt6 from "img/Projects/KtWiz/기능6.gif";
-import Kt7 from "img/Projects/KtWiz/기능7.gif";
+import Kt1 from "img/Projects/KtWiz/ktWiz1.gif";
+import Kt2 from "img/Projects/KtWiz/ktWiz2.gif";
+import Kt3 from "img/Projects/KtWiz/ktWiz3.gif";
+import Kt4 from "img/Projects/KtWiz/ktWiz4.gif";
+import Kt5 from "img/Projects/KtWiz/ktWiz5.gif";
+import Kt6 from "img/Projects/KtWiz/ktWiz6.gif";
+import Kt7 from "img/Projects/KtWiz/ktWiz7.gif";
 
 export const PROJECT_TSCENPING_DATA = [
   { original: Tscen1 },
