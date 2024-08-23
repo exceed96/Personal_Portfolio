@@ -55,19 +55,19 @@ const SkillsData = {
       name: "Next",
       img: Next,
       detail:
-        "Next의 Hybrid Rendering을 이용하여 CSR, SSR, SSG를 조합해 사용해 본 경험이 있습니다.",
+        "Next의 Pages Router, App Router, Hybrid Rendering을 이용하여 프로젝트를 진행한 경험이 있습니다.",
     },
     {
       name: "Redux",
       img: Redux,
       detail:
-        "Redux를 이용하여 컴포넌트의 상태변수들을 관리 한 경험이 있습니다.",
+        "Redux를 사용해 컴포넌트의 상태 변수를 관리하며 프로젝트를 진행한 경험이 있습니다.",
     },
     {
       name: "Zustand",
       img: Zustand,
       detail:
-        "Zustand를 이용하여 컴포넌트의 상태변수들을 관리 한 경험이 있습니다.",
+        "Zustand를 사용해 컴포넌트의 상태 변수를 관리하며 프로젝트를 진행한 경험이 있습니다.",
     },
     {
       name: "ReactQuery",
@@ -78,7 +78,8 @@ const SkillsData = {
     {
       name: "SCSS",
       img: SCSS,
-      detail: "SCSS를 이용하여 기존의 Css-in-Css를 관리해 본 경험이 있습니다.",
+      detail:
+        "SCSS를 이용하여 기존의 Css-In-Css를 이용해 프로젝트를 진행한 경험이 있습니다.",
     },
     {
       name: "CssModules",
