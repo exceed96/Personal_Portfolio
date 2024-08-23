@@ -1,6 +1,6 @@
 import WeakMain from "img/Projects/WeakApart/weakMain.gif";
 import TscenMain from "img/Projects/Tscenping/Tscen1.svg";
-import InsteadMain from "img/Projects/Im/Im1.svg";
+import InsteadMain from "img/Projects/Im/Im1.png";
 import TscenRMain from "img/Projects/TscenpingV2/Game.gif";
 import KtWizMain from "img/Projects/KtWiz/ktWizMain.jpg";
 

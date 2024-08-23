@@ -7,7 +7,7 @@ import Axios from "img/Library/Axios.svg";
 import Next from "img/Library/Next.svg";
 import TypeScript from "img/Library/TypeScript.svg";
 import SCSS from "img/Library/SCSS.svg";
-import Zustand from "img/Library/Zustand.svg";
+import Zustand from "img/Library/Zustand.png";
 import Socket from "img/Library/Socket.svg";
 import TailWind from "img/Library/Tailwind.svg";
 import ReactQuery from "img/Library/ReactQuery.svg";

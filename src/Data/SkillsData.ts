@@ -5,7 +5,7 @@ import TypeScript from "img/Library/TypeScript.svg";
 import React from "img/Library/React.svg";
 import Next from "img/Library/Next.svg";
 import Redux from "img/Library/Redux.svg";
-import Zustand from "img/Library/Zustand.svg";
+import Zustand from "img/Library/Zustand.png";
 import ReactQuery from "img/Library/ReactQuery.svg";
 import SCSS from "img/Library/SCSS.svg";
 import CssModules from "img/Library/CssModules.svg";
