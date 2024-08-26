@@ -17,7 +17,7 @@ const AboutMe = (): JSX.Element => {
       </section>
       <ul className="mt-4">
         <li className="text-base sm:text-xl md:text-2xl lg:text-3xl font-[Apple-Black] text-white">
-          안녕하세요, 프론트엔드 개발자 김상엽니다.😃
+          안녕하세요, 프론트엔드 개발자 김상엽입니다.😃
         </li>
         <li className="mt-8 flex flex-col">
           <h3 className="font-[Apple-Bold] text-[#73abfa] text-2xl flex items-start lg:items-center">
