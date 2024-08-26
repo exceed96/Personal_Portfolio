@@ -1,7 +1,10 @@
 import education from "img/education.webp";
 import school from "img/school.svg";
 import etc from "img/etc.svg";
-import { EDUCATION_PROJECT_DATA } from "Data/Education/EducationProjectData";
+import {
+  EDUCATION_42PROJECT_DATA,
+  EDUCATION_NEXTPROJECT_DATA,
+} from "Data/Education/EducationProjectData";
 import { EducationProjectDataType } from "Types/EducationType";
 import certification42 from "img/sangyeki.png";
 import Github from "img/Tools/Github.svg";
@@ -56,43 +59,48 @@ const Education = (): JSX.Element => {
                   42Seoul (2022.03.07 ~ 2023.12.29)
                 </span>
               </summary>
-              <ul className="grid grid-cols-2">
-                {EDUCATION_PROJECT_DATA.map(
-                  (project: EducationProjectDataType) => (
-                    <li className="flex flex-col mb-5">
-                      <details className="text-base md:text-lg educationDetail">
-                        <summary className="flex items-center">
-                          <span className="mr-1 xs:mr-3 text-sm md:text-xl text-[#dfffff] font-[Apple-Light]">
-                            {project.title}
-                          </span>
-                          {project.github && (
-                            <a href={project.github} target="blank">
-                              <img
-                                src={Github}
-                                alt="github"
-                                className="w-4 xs:w-5 sm:w-6 md:w-7 rounded-[4px]"
-                              />
-                            </a>
-                          )}
-                        </summary>
-                        <section className="ml-3 break-words text-sm md:text-lg font-[Apple-Medium]">
-                          📜&nbsp;{project.summary}
-                        </section>
-                      </details>
-                    </li>
-                  )
-                )}
-                <li>
-                  <details className="text-base">
-                    <summary>수료증</summary>
-                    <img
-                      src={certification42}
-                      className="w-full md:w-1/2 "
-                      alt="42seoul certification"
-                    />
-                  </details>
-                </li>
-              </ul>
+              <section className="text-xs xs:text-sm sm:text-base md:text-lg">
+                <section className="font-[Pretendard] bg-[#212121] p-3 rounded-md border-[1px] border-[#2e2e2e] shadow-[0_0px_8px_0px_rgba(255,255,255,0.1)]">
+                  {EDUCATION_42PROJECT_DATA.detail}
+                </section>
+                <ul className="grid grid-cols-2 mt-5">
+                  {EDUCATION_42PROJECT_DATA.project.map(
+                    (project: EducationProjectDataType, index) => (
+                      <li className="flex flex-col mb-5" key={index}>
+                        <details className="text-base md:text-lg educationDetail">
+                          <summary className="flex items-center">
+                            <span className="mr-1 xs:mr-3 text-sm md:text-xl text-[#dfffff] font-[Apple-Light]">
+                              {project.title}
+                            </span>
+                            {project.github && (
+                              <a href={project.github} target="blank">
+                                <img
+                                  src={Github}
+                                  alt="github"
+                                  className="w-4 xs:w-5 sm:w-6 md:w-7 rounded-[4px]"
+                                />
+                              </a>
+                            )}
+                          </summary>
+                          <section className="ml-3 break-words text-sm md:text-lg font-[Apple-Medium]">
+                            📜&nbsp;{project.summary}
+                          </section>
+                        </details>
+                      </li>
+                    )
+                  )}
+                  <li>
+                    <details className="text-base">
+                      <summary>수료증</summary>
+                      <img
+                        src={certification42}
+                        className="w-full md:w-1/2 "
+                        alt="42seoul certification"
+                      />
+                    </details>
+                  </li>
+                </ul>
+              </section>
             </details>
             <details>
               <summary className="text-base sm:text-lg md:text-xl lg:text-2xl cursor-pointer">
@@ -101,9 +109,36 @@ const Education = (): JSX.Element => {
                 </span>
               </summary>
               <section className="text-xs xs:text-sm sm:text-base md:text-lg">
-                스나이퍼 팩토리의 Next.JS 교육은 3주간 사전직무교육을 통해
-                JavaScript, TypeScript, React, Next의 개념들을 배우고 7주간
-                기업연계프로젝트를 통해서 완성된 결과물을 만드는 교육입니다.
+                <section className="font-[Pretendard] bg-[#212121] p-3 rounded-md border-[1px] border-[#2e2e2e] shadow-[0_0px_8px_0px_rgba(255,255,255,0.1)]">
+                  {EDUCATION_NEXTPROJECT_DATA.detail}
+                </section>
+                <ul className="mt-5">
+                  {EDUCATION_NEXTPROJECT_DATA.project.map(
+                    (project: EducationProjectDataType, index) => (
+                      <li className="flex flex-col mb-5" key={index}>
+                        <details className="text-base md:text-lg educationDetail">
+                          <summary className="flex items-center">
+                            <span className="mr-1 xs:mr-3 text-sm md:text-xl text-[#dfffff] font-[Apple-Light]">
+                              {project.title}
+                            </span>
+                            {project.github && (
+                              <a href={project.github} target="blank">
+                                <img
+                                  src={Github}
+                                  alt="github"
+                                  className="w-4 xs:w-5 sm:w-6 md:w-7 rounded-[4px]"
+                                />
+                              </a>
+                            )}
+                          </summary>
+                          <section className="ml-3 break-words text-sm md:text-lg font-[Apple-Medium]">
+                            📜&nbsp;{project.summary}
+                          </section>
+                        </details>
+                      </li>
+                    )
+                  )}
+                </ul>
               </section>
             </details>
           </div>

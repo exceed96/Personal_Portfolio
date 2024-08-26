@@ -32,7 +32,7 @@ const ScrollProgress = (): JSX.Element => {
         <img
           src={rocket}
           alt="progress rocket"
-          className="w-20 h-20 absolute right-0 translate-x-1/2 top-1/2 -translate-y-1/2"
+          className="xxs:w-12 xxs:h-12 xs:w-16 xs:h-16 sm:w-20 sm:h-20 absolute right-0 translate-x-1/2 top-1/2 -translate-y-1/2"
         />
       </div>
     </div>

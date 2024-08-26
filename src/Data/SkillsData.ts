@@ -31,7 +31,7 @@ const SkillsData = {
       name: "CSS",
       img: CSS,
       detail:
-        "flex, grid 등 다양한 정렬 요소들을 능숙하게 사용합니다.<br><br>가상 클래스, animation속성을 이용한 간단한 애니메이션을 구현할 수 있습니다.",
+        "flex, grid 등 다양한 정렬 요소들을 능숙하게 사용합니다.<br><br>가상 클래스, animation 속성을 이용한 간단한 애니메이션을 구현할 수 있습니다.",
     },
     {
       name: "JavaScript",
@@ -138,7 +138,7 @@ const SkillsData = {
       name: "Docker",
       img: Docker,
       detail:
-        "Docker를 이용하여 간단한 구조의 이미지 생성과 이를 위한 Docker-Compose파일을 구성할 수 있습니다.",
+        "Docker를 이용하여 간단한 구조의 이미지 생성과 이를 위한 Docker-Compose 파일을 구성할 수 있습니다.",
     },
   ],
 };
