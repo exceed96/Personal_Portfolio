@@ -22,7 +22,7 @@ const Skills = (): JSX.Element => {
   });
 
   const skillToolContainerStyle =
-    "w-full grid grid-cols-4 sm:flex sm:flex-wrap sm:flex-row sm:justify-between items-center gap-2 xs:gap-4 sm:gap-10 mt-8";
+    "w-full grid grid-cols-4 xxs:grid-cols-5 xs:grid-cols-6 sm:grid-cols-7 items-center gap-2 xs:gap-4 sm:gap-10 mt-8";
 
   useEffect(() => {
     const handleResize = () => {
