@@ -9,6 +9,7 @@ import { EducationProjectDataType } from "Types/EducationType";
 import certification42 from "img/sangyeki.png";
 import sniper from "img/sniper.png";
 import Github from "img/Tools/Github.svg";
+import cert from "img/cert.png";
 
 const Education = (): JSX.Element => {
   const educatoinTitleStyle =
@@ -78,7 +79,7 @@ const Education = (): JSX.Element => {
                                 <img
                                   src={Github}
                                   alt="github"
-                                  className="w-4 xs:w-5 sm:w-6 md:w-7 rounded-[4px]"
+                                  className="w-4 xs:w-5 sm:w-6 md:w-7 rounded-[4px] hover:scale-110 duration-300"
                                 />
                               </a>
                             )}
@@ -93,7 +94,12 @@ const Education = (): JSX.Element => {
                   <li>
                     <details className="text-base md:text-lg educationDetail">
                       <summary className="font-[Pretendard-SemiBold]">
-                        수료증
+                        <span className="mr-1 xs:mr-3">수료증</span>
+                        <img
+                          src={cert}
+                          alt="certification"
+                          className="w-4 xs:w-5 sm:w-6 md:w-7 rounded-[4px] hover:scale-110 duration-300"
+                        />
                       </summary>
                       <img
                         src={certification42}
@@ -129,7 +135,7 @@ const Education = (): JSX.Element => {
                                 <img
                                   src={Github}
                                   alt="github"
-                                  className="w-4 xs:w-5 sm:w-6 md:w-7 rounded-[4px]"
+                                  className="w-4 xs:w-5 sm:w-6 md:w-7 rounded-[4px] hover:scale-110 duration-300"
                                 />
                               </a>
                             )}
@@ -144,7 +150,12 @@ const Education = (): JSX.Element => {
                   <li>
                     <details className="text-base md:text-lg educationDetail">
                       <summary className="font-[Pretendard-SemiBold]">
-                        수료증
+                        <span className="mr-1 xs:mr-3">수료증</span>
+                        <img
+                          src={cert}
+                          alt="certification"
+                          className="w-4 xs:w-5 sm:w-6 md:w-7 rounded-[4px] hover:scale-110 duration-300"
+                        />
                       </summary>
                       <img
                         src={sniper}
