@@ -7,6 +7,7 @@ import {
 } from "Data/Education/EducationProjectData";
 import { EducationProjectDataType } from "Types/EducationType";
 import certification42 from "img/sangyeki.png";
+import sniper from "img/sniper.png";
 import Github from "img/Tools/Github.svg";
 
 const Education = (): JSX.Element => {
@@ -112,7 +113,7 @@ const Education = (): JSX.Element => {
                 <section className="font-[Pretendard] bg-[#212121] p-3 rounded-md border-[1px] border-[#2e2e2e] shadow-[0_0px_8px_0px_rgba(255,255,255,0.1)]">
                   {EDUCATION_NEXTPROJECT_DATA.detail}
                 </section>
-                <ul className="mt-5">
+                <ul className="grid grid-cols-2 mt-5">
                   {EDUCATION_NEXTPROJECT_DATA.project.map(
                     (project: EducationProjectDataType, index) => (
                       <li className="flex flex-col mb-5" key={index}>
@@ -138,6 +139,16 @@ const Education = (): JSX.Element => {
                       </li>
                     )
                   )}
+                  <li>
+                    <details className="text-base">
+                      <summary>수료증</summary>
+                      <img
+                        src={sniper}
+                        className="w-full md:w-1/2 "
+                        alt="42seoul certification"
+                      />
+                    </details>
+                  </li>
                 </ul>
               </section>
             </details>
