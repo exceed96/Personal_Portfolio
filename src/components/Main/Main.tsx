@@ -18,10 +18,10 @@ const Main = (): JSX.Element => {
           개발자, 김상엽입니다.
         </h2>
       </section>
-      <section className="flex flex-col items-center sm:flex-row sm:items-start w-full mt-8">
+      <section className="flex flex-col items-center sm:flex-row w-full mt-8">
         <img
           src={profileImage}
-          className="w-64 sm:w-50 md:w-60 rounded-[2rem]"
+          className="w-64 sm:w-50 md:w-60 rounded-[2rem] flex"
           alt="profile img"
         />
         <ContactAndInfo />
