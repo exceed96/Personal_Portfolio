@@ -213,17 +213,17 @@ const ProjectModal = (): JSX.Element => {
             <ul className={stackAndToolContainerStyle}>
               {modalProps?.tool.map((tool) => (
                 <li className="flex flex-col items-center">
-                  <img
-                    src={getToolImgSrc(tool)}
-                    className="w-12 xs:w-14 rounded-2xl"
-                    alt="project tool"
-                  />
                   {tool === "Github" && (
                     <a
                       target="__blank"
                       href={getGithubUrl(modalProps.name)}
                       className="text-sm font-[Apple-Black]"
                     >
+                      <img
+                        src={getToolImgSrc(tool)}
+                        className="w-12 xs:w-14 rounded-2xl hover:scale-105 duration-300"
+                        alt="project tool"
+                      />
                       바로가기
                     </a>
                   )}
