@@ -70,7 +70,7 @@ const Education = (): JSX.Element => {
                       <li className="flex flex-col mb-5" key={index}>
                         <details className="text-base md:text-lg educationDetail">
                           <summary className="flex items-center">
-                            <span className="mr-1 xs:mr-3 text-sm md:text-xl text-[#dfffff] font-[Apple-Light]">
+                            <span className="mr-1 xs:mr-3 text-xs md:text-xl text-[#dfffff] font-[Apple-Light]">
                               {project.title}
                             </span>
                             {project.github && (
@@ -91,8 +91,10 @@ const Education = (): JSX.Element => {
                     )
                   )}
                   <li>
-                    <details className="text-base">
-                      <summary>수료증</summary>
+                    <details className="text-base md:text-lg educationDetail">
+                      <summary className="font-[Pretendard-SemiBold]">
+                        수료증
+                      </summary>
                       <img
                         src={certification42}
                         className="w-full md:w-1/2 "
@@ -113,13 +115,13 @@ const Education = (): JSX.Element => {
                 <section className="font-[Pretendard] bg-[#212121] p-3 rounded-md border-[1px] border-[#2e2e2e] shadow-[0_0px_8px_0px_rgba(255,255,255,0.1)]">
                   {EDUCATION_NEXTPROJECT_DATA.detail}
                 </section>
-                <ul className="grid grid-cols-2 mt-5">
+                <ul className="flex flex-col mt-5">
                   {EDUCATION_NEXTPROJECT_DATA.project.map(
                     (project: EducationProjectDataType, index) => (
                       <li className="flex flex-col mb-5" key={index}>
                         <details className="text-base md:text-lg educationDetail">
                           <summary className="flex items-center">
-                            <span className="mr-1 xs:mr-3 text-sm md:text-xl text-[#dfffff] font-[Apple-Light]">
+                            <span className="mr-1 xs:mr-3 text-xs sm:text-base md:text-xl text-[#dfffff] font-[Apple-Light]">
                               {project.title}
                             </span>
                             {project.github && (
@@ -140,8 +142,10 @@ const Education = (): JSX.Element => {
                     )
                   )}
                   <li>
-                    <details className="text-base">
-                      <summary>수료증</summary>
+                    <details className="text-base md:text-lg educationDetail">
+                      <summary className="font-[Pretendard-SemiBold]">
+                        수료증
+                      </summary>
                       <img
                         src={sniper}
                         className="w-full md:w-1/2 "
