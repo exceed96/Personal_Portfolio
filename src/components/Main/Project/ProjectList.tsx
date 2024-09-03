@@ -26,12 +26,8 @@ const ProjectList = (props: ProjectDataTypes): JSX.Element => {
             </strong>
           </section>
         </section>
-        <section className="p-1 md:p-2 rounded-3xl mt-4 bg-black">
-          <img
-            src={props.mainImage}
-            className="rounded-2xl"
-            alt="project img"
-          />
+        <section className="p-1 md:p-2 mt-4 bg-black">
+          <img src={props.mainImage} alt="project img" />
         </section>
         <section className="w-full mt-12 lg:mt-16 flex flex-col items-center">
           <section className="flex items-center mb-4 self-start">

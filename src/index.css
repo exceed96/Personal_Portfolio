@@ -51,11 +51,8 @@ details[open] > summary {
   box-shadow: #2b15453d 1px 10px 10px 5px;
 }
 
-.image-gallery-slides {
-  border-radius: 1rem;
-}
-.image-gallery-image {
-  border-radius: 1rem;
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  border-radius: 0px;
 }
 
 code {

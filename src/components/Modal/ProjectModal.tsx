@@ -1,42 +1,20 @@
+import { useState, useEffect } from "react";
 import { useModalState } from "store/Modal";
-import React from "img/Library/React.svg";
-import JavaScript from "img/Library/JavaScript.svg";
-import Redux from "img/Library/Redux.svg";
-import CssModules from "img/Library/CssModules.svg";
-import Axios from "img/Library/Axios.svg";
-import Next from "img/Library/Next.svg";
-import TypeScript from "img/Library/TypeScript.svg";
-import SCSS from "img/Library/SCSS.svg";
-import Zustand from "img/Library/Zustand.png";
-import Socket from "img/Library/Socket.svg";
-import TailWind from "img/Library/Tailwind.svg";
-import ReactQuery from "img/Library/ReactQuery.svg";
-import Express from "img/Library/Express.svg";
-import Firebase from "img/Tools/Firebase.svg";
-import Github from "img/Tools/Github.svg";
-import Figma from "img/Tools/Figma.svg";
-import Docker from "img/Tools/Docker.svg";
-import Vercel from "img/Tools/Vercel.svg";
-import AWS from "img/Tools/AWS.svg";
+import ImageGallery from "react-image-gallery";
 import ProjectCheck from "img/ProjectModal/ProjectCheck.svg";
 import ProjectChecked from "img/ProjectModal/ProjectChecked.svg";
 import ProjectResult from "img/ProjectModal/ProjectResult.svg";
 import ProjectAll from "img/ProjectModal/ProjectAll.svg";
 import ProjectMe from "img/ProjectModal/ProjectMe.svg";
-import ImageGallery from "react-image-gallery";
-
-import {
-  PROJECT_TSCENPING_DATA,
-  PROJECT_TSCENPINGV2_DATA,
-  PROJECT_INSTEAD_DATA,
-  PROJECT_WEAK_DATA,
-  PROJECT_KTWIZ_DATA,
-} from "Data/Project/ProjectImageData";
-
+import { getStackImg } from "utils/getStackImg";
+import { getToolImg } from "utils/getToolImg";
+import { getGitUrl } from "utils/getGitUrl";
+import { getProjectMainImg } from "utils/getProjectMainImg";
 import { resultTypes } from "Types/ProjectType";
 
 const ProjectModal = (): JSX.Element => {
   const { modalProps } = useModalState();
+  const [isLoading, setIsLoading] = useState(true);
 
   const listStyle =
     "flex items-start flex-col md:flex-row text-base mt-4 xs:mt-6 sm:mt-8";
@@ -45,105 +23,29 @@ const ProjectModal = (): JSX.Element => {
   const listSectionStyle = "md:w-1/4 flex items-center self-center";
   const listSpanStyle =
     "text-start md:w-3/4 self-center font-[Apple-Black] text-base sm:text-lg md:text-xl md:ml-8";
-
   const functionTitleStyle =
     "self-start text-base sm:text-lg md:text-xl font-[Leferi-BlackOblique] flex items-center mb-2";
   const functionTitleImgStyle = "mr-2 xs:mr-3 sm:mr-4 w-4 h-4 sm:w-6 sm:h-6";
-
   const stackAndToolContainerStyle =
     "grid grid-cols-4 sm:flex sm:flex-wrap w-full md:w-3/4 md:mt-2 gap-4 sm:ml-5 mt-2 sm:mt-0";
+  const projectImg = getProjectMainImg(modalProps!.name) || [];
 
-  const getToolImgSrc = (toolName: string): string => {
-    switch (toolName) {
-      case "Figma":
-        return Figma;
-      case "Github":
-        return Github;
-      case "Firebase":
-        return Firebase;
-      case "Docker":
-        return Docker;
-      case "Vercel":
-        return Vercel;
-      case "AWS":
-        return AWS;
-      default:
-        return "";
-    }
-  };
-
-  const getImgSrc = (stackName: string): string => {
-    switch (stackName) {
-      case "React":
-        return React;
-      case "JavaScript":
-        return JavaScript;
-      case "Redux":
-        return Redux;
-      case "CssModules":
-        return CssModules;
-      case "Axios":
-        return Axios;
-      case "Next":
-        return Next;
-      case "TypeScript":
-        return TypeScript;
-      case "SCSS":
-        return SCSS;
-      case "Zustand":
-        return Zustand;
-      case "Socket":
-        return Socket;
-      case "Tailwind":
-        return TailWind;
-      case "ReactQuery":
-        return ReactQuery;
-      case "Express":
-        return Express;
-      default:
-        return "";
-    }
-  };
-
-  const getGithubUrl = (name: string) => {
-    switch (name) {
-      case "InsteadMemo":
-        return "https://github.com/Instead-Memory/Instead-Memory";
-      case "Tscenping":
-        return "https://github.com/tscenping";
-      case "Tscenping-V2":
-        return "https://github.com/tscenping/tscenping";
-      case "전국 부실아파트 조회":
-        return "https://github.com/poorapartment/FE";
-      case "KT Wiz AI 분석 페이지 만들기":
-        return "https://github.com/KT-Kimbu-net";
-      default:
-        return "";
-    }
-  };
-
-  const getProjectImgSrc = (name: string) => {
-    switch (name) {
-      case "InsteadMemo":
-        return PROJECT_INSTEAD_DATA;
-      case "Tscenping":
-        return PROJECT_TSCENPING_DATA;
-      case "Tscenping-V2":
-        return PROJECT_TSCENPINGV2_DATA;
-      case "전국 부실아파트 조회":
-        return PROJECT_WEAK_DATA;
-      case "KT Wiz AI 분석 페이지 만들기":
-        return PROJECT_KTWIZ_DATA;
-    }
-  };
-
-  const projectImg = getProjectImgSrc(modalProps!.name) || PROJECT_INSTEAD_DATA;
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <section className="flex flex-col items-start h-full sm:h-[1080px] overflow-y-auto scrollbar-hide">
       <section className="flex w-full flex-col md:flex-col lg:flex-col xl:flex-col">
-        <section className="w-full mr-10 p-1 sm:p-2 bg-black rounded-3xl">
-          <ImageGallery showPlayButton={false} items={projectImg} />
+        <section className="w-full h-fit mr-10 p-1 sm:p-2 bg-black">
+          {isLoading ? (
+            <section className="bg-white w-full flex flex-col items-center animate-pulse"></section>
+          ) : (
+            <ImageGallery showPlayButton={false} items={projectImg} />
+          )}
         </section>
         <ul className="mt-8">
           <li className="flex flex-col items-center md:flex-row mt-4 2xl:mt-0">
@@ -198,7 +100,7 @@ const ProjectModal = (): JSX.Element => {
               {modalProps?.stack.map((stack) => (
                 <li className="flex justify-center">
                   <img
-                    src={getImgSrc(stack)}
+                    src={getStackImg(stack)}
                     className="w-12 xs:w-14 rounded-2xl"
                     alt="project imgs"
                   />
@@ -216,11 +118,11 @@ const ProjectModal = (): JSX.Element => {
                   {tool === "Github" && (
                     <a
                       target="__blank"
-                      href={getGithubUrl(modalProps.name)}
+                      href={getGitUrl(modalProps.name)}
                       className="text-sm font-[Apple-Black]"
                     >
                       <img
-                        src={getToolImgSrc(tool)}
+                        src={getToolImg(tool)}
                         className="w-12 xs:w-14 rounded-2xl hover:scale-105 duration-300"
                         alt="project tool"
                       />
@@ -231,12 +133,6 @@ const ProjectModal = (): JSX.Element => {
               ))}
             </ul>
           </li>
-          {/* <li className={listStyle}>
-            <section className={listSectionStyle}>
-              <span className={listTitleStyle}>Link</span>
-            </section>
-            <span>전국 부실아파트 조회</span>
-          </li> */}
         </ul>
       </section>
       <section className="flex flex-col sm:flex-row w-full mt-12">
