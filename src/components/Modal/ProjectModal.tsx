@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { useModalState } from "store/Modal";
 import ImageGallery from "react-image-gallery";
 import ProjectCheck from "img/ProjectModal/ProjectCheck.svg";
@@ -33,11 +32,7 @@ const ProjectModal = (): JSX.Element => {
     <section className="flex flex-col items-start h-full sm:h-[1080px] overflow-y-auto scrollbar-hide">
       <section className="flex w-full flex-col md:flex-col lg:flex-col xl:flex-col">
         <section className="w-full h-fit mr-10 p-1 sm:p-2 bg-black">
-          {/* {isLoading ? (
-            <section className="bg-white w-full flex flex-col items-center animate-pulse"></section>
-          ) : ( */}
           <ImageGallery showPlayButton={false} items={projectImg} />
-          {/* )} */}
         </section>
         <ul className="mt-8">
           <li className="flex flex-col items-center md:flex-row mt-4 2xl:mt-0">
