@@ -55,6 +55,16 @@ details[open] > summary {
   border-radius: 0px;
 }
 
+.image-gallery-image {
+  height: 700px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .image-gallery-image {
+    height: 300px;
+  }
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
