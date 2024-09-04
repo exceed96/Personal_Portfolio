@@ -14,7 +14,6 @@ import { resultTypes } from "Types/ProjectType";
 
 const ProjectModal = (): JSX.Element => {
   const { modalProps } = useModalState();
-  const [isLoading, setIsLoading] = useState(true);
 
   const listStyle =
     "flex items-start flex-col md:flex-row text-base mt-4 xs:mt-6 sm:mt-8";
@@ -30,22 +29,15 @@ const ProjectModal = (): JSX.Element => {
     "grid grid-cols-4 sm:flex sm:flex-wrap w-full md:w-3/4 md:mt-2 gap-4 sm:ml-5 mt-2 sm:mt-0";
   const projectImg = getProjectMainImg(modalProps!.name) || [];
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 1000);
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <section className="flex flex-col items-start h-full sm:h-[1080px] overflow-y-auto scrollbar-hide">
       <section className="flex w-full flex-col md:flex-col lg:flex-col xl:flex-col">
         <section className="w-full h-fit mr-10 p-1 sm:p-2 bg-black">
-          {isLoading ? (
+          {/* {isLoading ? (
             <section className="bg-white w-full flex flex-col items-center animate-pulse"></section>
-          ) : (
-            <ImageGallery showPlayButton={false} items={projectImg} />
-          )}
+          ) : ( */}
+          <ImageGallery showPlayButton={false} items={projectImg} />
+          {/* )} */}
         </section>
         <ul className="mt-8">
           <li className="flex flex-col items-center md:flex-row mt-4 2xl:mt-0">
