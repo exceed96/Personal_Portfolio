@@ -1,5 +1,4 @@
 import { useState, useCallback, useEffect, useRef } from "react";
-import rocket from "img/rocket.svg";
 
 const ScrollProgress = (): JSX.Element => {
   const [width, setWidth] = useState<number>(0);
@@ -28,13 +27,10 @@ const ScrollProgress = (): JSX.Element => {
 
   return (
     <div className="w-full h-[4px] bg-black" ref={progressRef}>
-      <div className="relative h-full bg-white" style={{ width: width + "%" }}>
-        <img
-          src={rocket}
-          alt="progress rocket"
-          className="xxs:w-12 xxs:h-12 xs:w-16 xs:h-16 sm:w-20 sm:h-20 absolute right-0 translate-x-1/2 top-1/2 -translate-y-1/2"
-        />
-      </div>
+      <div
+        className="relative h-full bg-white"
+        style={{ width: width + "%" }}
+      ></div>
     </div>
   );
 };
