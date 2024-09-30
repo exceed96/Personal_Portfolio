@@ -1,8 +1,11 @@
 export type ModalName =
-  | "tscenping"
-  | "insteadMemo"
-  | "tscenpingv2"
+  | "Tscenping"
+  | "InsteadMemo"
+  | "Tscenping-V2"
   | "weakApart"
+  | "cert42"
+  | "snipercert"
+  | "KT Wiz AI 분석 페이지 만들기"
   | null;
 
 export interface resultTypes {
