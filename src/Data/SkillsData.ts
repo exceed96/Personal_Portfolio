@@ -134,12 +134,12 @@ const SkillsData = {
       img: AWS,
       detail: "AWS의 EC2, Route53, S3을 이용한 배포 경험이 있습니다.",
     },
-    {
-      name: "Docker",
-      img: Docker,
-      detail:
-        "Docker를 이용하여 간단한 구조의 이미지 생성과 이를 위한 Docker-Compose 파일을 구성할 수 있습니다.",
-    },
+    // {
+    //   name: "Docker",
+    //   img: Docker,
+    //   detail:
+    //     "Docker를 이용하여 간단한 구조의 이미지 생성과 이를 위한 Docker-Compose 파일을 구성할 수 있습니다.",
+    // },
   ],
 };
 
