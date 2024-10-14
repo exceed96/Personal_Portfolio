@@ -185,9 +185,9 @@ const PROJECT_DATA = [
       },
       {
         title:
-          "스타일 관리의 효율성 증대: Tailwind CSS의 Css-In-Js 방식을 통한 개선",
+          "스타일 관리의 효율성 증대: Tailwind CSS를 통한 스타일 관리 및 퍼블리싱 개선",
         content:
-          "✅ 기존의 CSSModule 기반 SCSS을 이용한 스타일 관리는 Css-In-Css 방식이어서 각 컴포넌트마다 CSS 만들어야 했지만 TailWind는 Css-In-Js 방식으로 컴포넌트의 요소에 직접 스타일을 정의할 수 있어서 리팩토링 이전의 스타일 관리보다 훨씬 효율적으로 진행하였습니다.",
+          "✅ 기존의 CSSModule 기반 SCSS을 이용한 스타일 관리는 Css-In-Css 방식이어서 각 컴포넌트마다 CSS 만들어야 했지만 TailWind는 컴포넌트의 요소에 직접 스타일을 정의할 수 있어서 리팩토링 이전의 스타일 관리보다 훨씬 효율적으로 진행하였습니다.",
       },
     ],
   },
