@@ -22,7 +22,7 @@ const ModalContent = (): JSX.Element => {
     Tscenping: <ProjectModal />,
     InsteadMemo: <ProjectModal />,
     "Tscenping-V2": <ProjectModal />,
-    "전국 부실아파트 조회": <ProjectModal />,
+    "전국 부실 아파트 조회": <ProjectModal />,
     "KT Wiz AI 분석 페이지 만들기": <ProjectModal />,
     cert42: <CertModal />,
     snipercert: <CertModal />,

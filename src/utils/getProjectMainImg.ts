@@ -14,7 +14,7 @@ export const getProjectMainImg = (name: string) => {
       return PROJECT_TSCENPING_DATA;
     case "Tscenping-V2":
       return PROJECT_TSCENPINGV2_DATA;
-    case "전국 부실아파트 조회":
+    case "전국 부실 아파트 조회":
       return PROJECT_WEAK_DATA;
     case "KT Wiz AI 분석 페이지 만들기":
       return PROJECT_KTWIZ_DATA;
