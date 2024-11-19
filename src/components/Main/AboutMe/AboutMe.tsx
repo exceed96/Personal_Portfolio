@@ -28,7 +28,7 @@ const AboutMe = (): JSX.Element => {
             />
             <span className={aboutMeTitleStyle}>
               동료와의 학습을 통해 배운 것을 정리하고 서로 간의 지식을 나누며
-              함께 능동적으로 성장해왔습니다.
+              함께 능동적으로 성장해 왔습니다.
             </span>
           </h3>
           <span className={aboutMeContentStyle}>
