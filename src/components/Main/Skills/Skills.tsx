@@ -65,6 +65,7 @@ const Skills = (): JSX.Element => {
           src={skills}
           className="w-8 sm:w-10 md:w-12 mr-4"
           alt="project skill section"
+          loading="lazy"
         />
         <h2 className="text-[#eeffff] text-xl sm:text-4xl">Skills</h2>
       </section>
@@ -86,6 +87,7 @@ const Skills = (): JSX.Element => {
                     src={stack.img}
                     className="w-10 xs:w-12 sm:w-16 md:w-20 lg:w-24 rounded xs:rounded-md sm:rounded-lg md:rounded-xl duration-300"
                     alt="project stack"
+                    loading="lazy"
                   />
                   <span className="xxs:text-[6px] xs:text-[8px] sm:text-xs md:text-base font-[Leferi-BlackOblique] mt-2 w-full text-wrap">
                     {stack.name}
@@ -113,6 +115,7 @@ const Skills = (): JSX.Element => {
                     src={tool.img}
                     className="w-10 xs:w-12 sm:w-16 md:w-20 lg:w-24 rounded xs:rounded-md sm:rounded-lg md:rounded-xl duration-300"
                     alt="project tool"
+                    loading="lazy"
                   />
                   <span className="xxs:text-[8px] sm:text-xs md:text-base font-[Leferi-BlackOblique]">
                     {tool.name}
