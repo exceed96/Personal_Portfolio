@@ -23,7 +23,7 @@ const Main = (): JSX.Element => {
           src={profileImage}
           className="w-64 sm:w-50 md:w-60 rounded-[2rem] flex"
           alt="profile img"
-          loading="lazy"
+          loading="eager"
         />
         <ContactAndInfo />
       </section>

@@ -30,6 +30,7 @@ const ContactAndInfo = (): JSX.Element => {
           href="https://velog.io/@exceed96"
           className={`${infoStyle} hover:scale-110 hover:text-[#eeffff] duration-300`}
           target="blank"
+          title="기술 블로그"
         >
           https://velog.io/@exceed96
         </a>
@@ -40,6 +41,7 @@ const ContactAndInfo = (): JSX.Element => {
           href="https://github.com/exceed96"
           className={`${infoStyle} hover:scale-110 hover:text-[#eeffff] duration-300`}
           target="blank"
+          title="깃허브"
         >
           https://github.com/exceed96
         </a>

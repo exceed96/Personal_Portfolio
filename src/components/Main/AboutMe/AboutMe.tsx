@@ -36,7 +36,8 @@ const AboutMe = (): JSX.Element => {
             성장했습니다. 그 결과, 저는 프론트엔드 개발 분야의 폭넓은 경험과
             이해를 쌓을 수 있었고, 이를&nbsp;
             <strong className="underline">블로그</strong>를 통해 다른 이들과
-            공유하였습니다. 이 과정에서 70개 이상의 포스팅을 작성하였습니다.
+            공유하였습니다. 이 과정에서 80개 이상의 포스팅을 작성하여 역량을
+            쌓았습니다.
           </span>
         </li>
         <li className="mt-8 flex flex-col">
@@ -47,14 +48,15 @@ const AboutMe = (): JSX.Element => {
               alt="aboutMe two"
             />
             <span className={aboutMeTitleStyle}>
-              사용자의 경험을 우선순위로 하고 가치를 제공하는 개발을 합니다.
+              다양한 개인 프로젝트, 팀 프로젝트를 통해 개발자로서의 역량을
+              쌓았습니다.
             </span>
           </h3>
           <span className={aboutMeContentStyle}>
-            단순히 개발하는 것이 아니라,<span> </span>
-            <strong className="underline">사용자의 관점</strong>에서 필요한
-            서비스를 고민하며, 기존 서비스를 계속해서 발전시켜 사용자 경험을
-            향상시키고 새로운 사용자를 유입시킬 방법을 탐구하며 개발에 임합니다.
+            20개의 개인 프로젝트와 8개의 팀 프로젝트를 통해 기획 단계의 요구
+            사항 분석부터 개발 및 배포까지 다 양한 과정을 경험하였습니다. 이를
+            통해 개발 능력과 문제 해결 능력을 키우고 팀원들 과의 협업을 통해 효
+            과적인 소 통과 업무 분담의 중요성을 배웠습니다.
           </span>
         </li>
         <li className="mt-8 flex flex-col">

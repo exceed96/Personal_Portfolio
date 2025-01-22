@@ -1,6 +1,6 @@
 export const EDUCATION_42PROJECT_DATA = {
   detail:
-    "이노베이션 아카데미는 2년 동안 교수, 정해진 교재 없이 동료 학습을 통해서 소프트웨어에 대한 경험을 나누고 서로 간의 지식을 나누는 교육입니다. 2022년 2월부터 2023년 12월까지 2년 가까이 기본 프로젝트로 C, JavaScript, C++ 등 프로젝트에 가장 적합한 프로그래밍 언어로 웹소켓, 간단한 그래픽, 도커를 활용하여 다양한 프로젝트를 수행했습니다.",
+    "이노베이션 아카데미는 2년 동안 교수, 정해진 교재 없이 동료 학습을 통해서 소프트웨어에 대한 경험을 나누고 서로 간의 지식을 나누는 교육입니다. 2022년 2월부터 2023년 12월까지 2년 가까이 기본 프로젝트로 C, JavaScript, C++ 등 프로젝트에 가장 적합한 프로그래밍 언어로 웹소켓, 간단한 그래픽, 도커를 활용하여 24개의 프로젝트를 수행했습니다.",
   project: [
     {
       title: "Libft",
@@ -90,7 +90,7 @@ export const EDUCATION_42PROJECT_DATA = {
 
 export const EDUCATION_NEXTPROJECT_DATA = {
   detail:
-    "스나이퍼 팩토리의 Next.JS 교육은 3주간 사전직무교육을 통해 JavaScript, TypeScript, React, Next의 개념들을 배우고 7주간 기업 연계 프로젝트를 통해서 완성된 결과물을 만드는 교육입니다.",
+    "스나이퍼 팩토리의 Next.JS 교육을 통해 3주간 JavaScript, TypeScript, React, Next의 개념들을 배우고 7주간 기업 연계 프로젝트를 통해 결과물을 만드는 프로젝트를 수행했습니다.",
   project: [
     {
       title: "KT Wiz AI 분석 페이지 만들기",
